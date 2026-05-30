@@ -51,7 +51,7 @@ const Signup = () => {
                 <div className="text-center mb-6">
                     <img src={assets.logo} alt="logo" className="h-12 mx-auto invert opacity-80 mb-4" />
                     <h1 className="text-2xl font-bold text-gray-900 font-playfair">Create account</h1>
-                    <p className="text-gray-500 text-sm mt-1">Choose how you want to use HotelDemo</p>
+                    <p className="text-gray-500 text-sm mt-1">Choose how you want to use Bekele Mola Hotels</p>
                 </div>
 
                 <div className="grid grid-cols-2 gap-3 mb-6">

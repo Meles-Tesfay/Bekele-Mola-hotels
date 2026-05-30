@@ -219,7 +219,7 @@ const RoomDetail = () => {
                                     <div className='absolute bottom-0 right-0 bg-green-500 w-5 h-5 rounded-full border-2 border-white shadow-sm'></div>
                                 </div>
                                 <div>
-                                    <p className='text-xl font-bold text-gray-900'>Hosted by {room?.hotel?.owner?.name || 'HotelDemo Host'}</p>
+                                    <p className='text-xl font-bold text-gray-900'>Hosted by {room?.hotel?.owner?.name || 'Bekele Mola Hotels'}</p>
                                     <div className='flex items-center gap-2 mt-1'>
                                         <StarRating />
                                         <p className='text-sm text-gray-500 font-medium'>200+ Reviews</p>

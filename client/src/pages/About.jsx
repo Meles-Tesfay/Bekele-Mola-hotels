@@ -52,10 +52,10 @@ const About = () => {
                             Our Story
                         </div>
                         <h1 className='font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 transition-transform duration-500 group-hover/header:translate-x-2 cursor-default leading-tight'>
-                            Redefining <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#49B9FF] to-blue-700 transition-all duration-500 hover:-translate-y-1 hover:from-[#FF4D00] hover:to-[#FF8C00] hover:drop-shadow-[0_0_12px_rgba(255,77,0,0.6)]">Hospitality</span> <br/> Since 2010
+                            Authentic Ethiopian <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-[#49B9FF] to-blue-700 transition-all duration-500 hover:-translate-y-1 hover:from-[#FF4D00] hover:to-[#FF8C00] hover:drop-shadow-[0_0_12px_rgba(255,77,0,0.6)]">Hospitality</span> <br/> Since 1968
                         </h1>
                         <p className='text-gray-500 text-lg leading-relaxed mb-6'>
-                            Founded with a vision to create unparalleled travel experiences, HotelDemo has grown into a premier destination for discerning travelers. We blend modern elegance with timeless charm, offering a sanctuary where every detail is meticulously crafted.
+                            Founded with a vision to create unparalleled travel experiences, Bekele Mola Hotels has grown into a premier destination for discerning travelers across Ethiopia. We blend modern elegance with authentic cultural charm, offering a sanctuary where every detail is meticulously crafted.
                         </p>
                         <p className='text-gray-500 text-lg leading-relaxed mb-8'>
                             Whether you are visiting for a quiet retreat or a grand celebration, our commitment remains the same: to provide an extraordinary environment that feels like a home away from home.
@@ -112,7 +112,7 @@ const About = () => {
                         Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Mission</span>
                     </h2>
                     <p className='text-gray-500 text-lg leading-relaxed mb-6'>
-                        We exist to elevate the art of hospitality. Our mission is to provide an oasis of comfort and elegance for travelers seeking an escape from the ordinary. We believe that a hotel should be more than just a place to sleep—it should be a destination in itself.
+                        We exist to elevate the art of Ethiopian hospitality. Our mission is to provide an oasis of comfort and elegance for travelers seeking an escape from the ordinary, exploring the beauty of Ethiopia. We believe that a hotel should be more than just a place to sleep—it should be a cultural destination in itself.
                     </p>
                     <p className='text-gray-500 text-lg leading-relaxed mb-8'>
                         By combining world-class amenities with a deep respect for our local culture and environment, we create spaces where guests can truly unwind, connect, and be inspired.
@@ -168,7 +168,7 @@ const About = () => {
                         Ready to experience the extraordinary?
                     </h2>
                     <p className='text-gray-600 text-lg mb-10 relative z-10 max-w-2xl mx-auto'>
-                        Join thousands of satisfied guests who have made HotelDemo their preferred choice for luxury stays. Your perfect room is just a click away.
+                        Join thousands of satisfied guests who have made Bekele Mola Hotels their preferred choice for luxury stays across Ethiopia. Your perfect room is just a click away.
                     </p>
                     <button className="relative z-10 bg-gradient-to-r from-[#49B9FF] to-blue-600 hover:from-[#FF4D00] hover:to-[#FF8C00] text-white px-10 py-4 rounded-full font-bold text-lg transition-all duration-500 shadow-lg hover:shadow-[0_10px_30px_rgba(255,77,0,0.5)] hover:-translate-y-1">
                         Book Your Stay Now

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { BackLink, ContactPanel, usePageScroll } from './FooterShared'
 import { FooterIcon } from './FooterIcons'
 
@@ -18,7 +18,7 @@ const jobDetails = {
         dept: 'Engineering',
         location: 'Remote / Lisbon',
         type: 'Full-time',
-        salary: '$95k – $130k',
+        salary: '$95k â€“ $130k',
         tags: ['React', 'TypeScript', 'Design Systems'],
         responsibilities: [
             'Build and maintain the guest booking experience across web and mobile.',
@@ -31,7 +31,7 @@ const jobDetails = {
         dept: 'Design',
         location: 'Remote / Barcelona',
         type: 'Full-time',
-        salary: '$80k – $115k',
+        salary: '$80k â€“ $115k',
         tags: ['Figma', 'UX Research', 'Mobile'],
         responsibilities: [
             'Lead end-to-end design for booking, hospitality, and owner tools.',
@@ -44,7 +44,7 @@ const jobDetails = {
         dept: 'Operations',
         location: 'Hybrid / Dubai',
         type: 'Full-time',
-        salary: '$60k – $85k',
+        salary: '$60k â€“ $85k',
         tags: ['CRM', 'Hospitality', 'EMEA'],
         responsibilities: [
             'Onboard hotel partners and guide them through the owner dashboard.',
@@ -57,7 +57,7 @@ const jobDetails = {
         dept: 'Marketing',
         location: 'Remote',
         type: 'Full-time',
-        salary: '$55k – $75k',
+        salary: '$55k â€“ $75k',
         tags: ['SEO', 'Editorial', 'Analytics'],
         responsibilities: [
             'Develop and execute content strategy for organic growth channels.',
@@ -99,7 +99,7 @@ const CareersLayout = ({ page }) => {
 
     return (
         <div className="min-h-screen bg-[#0a1628] text-white">
-            {/* ─── HERO SECTION (preserved) ─── */}
+            {/* â”€â”€â”€ HERO SECTION (preserved) â”€â”€â”€ */}
             <section className="pt-28 px-6 md:px-20 pb-16 text-center max-w-5xl mx-auto">
                 <BackLink className="text-slate-400 hover:text-white !mb-10" />
                 <p className="text-[#49B9FF] text-xs font-bold uppercase tracking-[0.4em] mb-6">{page.badge}</p>
@@ -126,19 +126,19 @@ const CareersLayout = ({ page }) => {
                 </div>
             </section>
 
-            {/* ─── INTRO ─── */}
+            {/* â”€â”€â”€ INTRO â”€â”€â”€ */}
             <section className="px-6 md:px-20 py-16 max-w-4xl mx-auto">
                 {page.intro.map((p, i) => (
                     <p key={i} className="text-slate-300 text-lg leading-relaxed mb-5">{p}</p>
                 ))}
             </section>
 
-            {/* ─── CULTURE GALLERY ─── */}
+            {/* â”€â”€â”€ CULTURE GALLERY â”€â”€â”€ */}
             <section className="px-6 md:px-20 pb-16">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-10">
                         <p className="text-[#49B9FF] text-xs font-bold uppercase tracking-[0.4em] mb-3">Our Culture</p>
-                        <h2 className="font-playfair text-3xl md:text-4xl font-bold">Life at HotelDemo</h2>
+                        <h2 className="font-playfair text-3xl md:text-4xl font-bold">Life at Bekele Mola Hotels</h2>
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                         {cultureImages.map((img, i) => (
@@ -157,7 +157,7 @@ const CareersLayout = ({ page }) => {
                 </div>
             </section>
 
-            {/* ─── BENEFITS ─── */}
+            {/* â”€â”€â”€ BENEFITS â”€â”€â”€ */}
             <section className="px-6 md:px-20 py-20 bg-white text-gray-900 rounded-t-[3rem]">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-14">
@@ -192,7 +192,7 @@ const CareersLayout = ({ page }) => {
                 </div>
             </section>
 
-            {/* ─── JOB BOARD ─── */}
+            {/* â”€â”€â”€ JOB BOARD â”€â”€â”€ */}
             <section className="px-6 md:px-20 py-20 bg-slate-50">
                 <div className="max-w-5xl mx-auto">
                     <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
@@ -282,7 +282,7 @@ const CareersLayout = ({ page }) => {
                                                         : 'bg-[#0a1628] text-white hover:bg-[#49B9FF] hover:shadow-lg hover:-translate-y-0.5'
                                                 }`}
                                             >
-                                                {isApplied ? '✓ Application Submitted' : 'Apply for This Role →'}
+                                                {isApplied ? 'âœ“ Application Submitted' : 'Apply for This Role â†’'}
                                             </button>
                                         </div>
                                     )}
@@ -293,7 +293,7 @@ const CareersLayout = ({ page }) => {
                 </div>
             </section>
 
-            {/* ─── CONTACT / APPLICATION PORTAL ─── */}
+            {/* â”€â”€â”€ CONTACT / APPLICATION PORTAL â”€â”€â”€ */}
             <section className="px-6 md:px-20 py-20 bg-gradient-to-br from-[#0a1628] to-slate-900">
                 <div className="max-w-4xl mx-auto">
                     <div className="rounded-3xl bg-white/5 border border-white/10 backdrop-blur p-10 md:p-14 flex flex-col md:flex-row gap-10 items-start">
@@ -328,7 +328,7 @@ const CareersLayout = ({ page }) => {
                             ) : (
                                 <div className="text-center py-6 space-y-4">
                                     <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto text-xl font-bold">
-                                        ✓
+                                        âœ“
                                     </div>
                                     <p className="text-sm text-white font-semibold">Application Sent!</p>
                                     <p className="text-xs text-slate-400">Thanks for applying. We will review your profile and get back to you soon.</p>
@@ -346,3 +346,4 @@ const CareersLayout = ({ page }) => {
 }
 
 export default CareersLayout
+

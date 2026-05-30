@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { BackLink, ContactPanel, usePageScroll } from './FooterShared'
 import { FooterIcon } from './FooterIcons'
 
@@ -9,24 +9,24 @@ const tiers = [
         name: 'Boutique',
         icon: 'home',
         color: 'from-indigo-500 to-violet-600',
-        rooms: '1–20 rooms',
+        rooms: '1â€“20 rooms',
         commission: '12%',
         setup: 'Free',
         support: 'Email',
         features: ['Room listings', 'Basic offers', 'Guest messaging', 'Analytics dashboard', 'Mobile-friendly profile'],
-        footerNote: 'Commission-only pricing · No monthly fees',
+        footerNote: 'Commission-only pricing Â· No monthly fees',
         highlight: false,
     },
     {
         name: 'Luxury Resort',
         icon: 'palm',
         color: 'from-amber-500 to-orange-500',
-        rooms: '21–100 rooms',
+        rooms: '21â€“100 rooms',
         commission: '10%',
         setup: 'Free',
         support: 'Priority email + phone',
         features: ['All Boutique features', 'Hospitality add-ons', 'Exclusive Offers module', 'Featured placement', 'Dedicated account manager', 'Revenue analytics'],
-        footerNote: 'Priority onboarding · Featured marketplace placement',
+        footerNote: 'Priority onboarding Â· Featured marketplace placement',
         highlight: true,
     },
     {
@@ -38,7 +38,7 @@ const tiers = [
         setup: 'Free',
         support: '24/7 priority line',
         features: ['All Luxury features', 'Multi-property dashboard', 'API / PMS integration', 'Custom branding', 'White-glove onboarding', 'Joint marketing campaigns'],
-        footerNote: 'Volume rates · 24/7 partner success line',
+        footerNote: 'Volume rates Â· 24/7 partner success line',
         highlight: false,
     },
 ]
@@ -48,7 +48,7 @@ const successStories = [
         imgId: '1566073771259-6a8506099945',
         hotel: 'Cala di Volpe, Sardinia',
         uplift: '+42% bookings',
-        quote: 'HotelDemo brought us guests we could never have reached through our own website alone. The hospitality marketplace feature tripled our spa revenue in the first month.',
+        quote: 'Bekele Mola Hotels brought us guests we could never have reached through our own website alone. The hospitality marketplace feature tripled our spa revenue in the first month.',
         person: 'Roberto Castellani, GM',
     },
     {
@@ -75,7 +75,7 @@ const PartnersLayout = ({ page }) => {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-indigo-950 via-indigo-900 to-indigo-950 text-white overflow-hidden">
-            {/* ─── HERO (preserved) ─── */}
+            {/* â”€â”€â”€ HERO (preserved) â”€â”€â”€ */}
             <section className="pt-28 px-6 text-center relative">
                 <BackLink className="text-indigo-300 hover:text-white" />
                 <p className="text-indigo-300 text-sm font-bold uppercase tracking-widest mt-8">{page.badge}</p>
@@ -85,7 +85,7 @@ const PartnersLayout = ({ page }) => {
                 <p className="text-indigo-200 mt-4 max-w-xl mx-auto">{page.subtitle}</p>
             </section>
 
-            {/* ─── STATS ─── */}
+            {/* â”€â”€â”€ STATS â”€â”€â”€ */}
             <section className="flex flex-wrap justify-center gap-8 px-6 py-12 border-y border-indigo-700 mt-8">
                 {page.stats.map((s) => (
                     <div key={s.label} className="text-center">
@@ -95,14 +95,14 @@ const PartnersLayout = ({ page }) => {
                 ))}
             </section>
 
-            {/* ─── INTRO ─── */}
+            {/* â”€â”€â”€ INTRO â”€â”€â”€ */}
             <section className="px-6 md:px-16 py-12 max-w-3xl mx-auto">
                 {page.intro.map((p, i) => (
                     <p key={i} className="text-indigo-100 text-center mb-4 leading-relaxed">{p}</p>
                 ))}
             </section>
 
-            {/* ─── BENEFITS GRID ─── */}
+            {/* â”€â”€â”€ BENEFITS GRID â”€â”€â”€ */}
             <section className="px-6 md:px-16 pb-20">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-12">
@@ -126,7 +126,7 @@ const PartnersLayout = ({ page }) => {
                 </div>
             </section>
 
-            {/* ─── PARTNER TIERS ─── */}
+            {/* â”€â”€â”€ PARTNER TIERS â”€â”€â”€ */}
             <section className="bg-white text-gray-900 rounded-t-[3rem] px-6 md:px-16 py-20">
                 <div className="max-w-6xl mx-auto">
                     <div className="text-center mb-14">
@@ -170,7 +170,7 @@ const PartnersLayout = ({ page }) => {
                                     <ul className="space-y-2 flex-1 mb-6">
                                         {tier.features.map((f) => (
                                             <li key={f} className="flex items-center gap-2 text-sm text-gray-700">
-                                                <span className="w-4 h-4 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold shrink-0">✓</span>
+                                                <span className="w-4 h-4 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs font-bold shrink-0">âœ“</span>
                                                 {f}
                                             </li>
                                         ))}
@@ -191,7 +191,7 @@ const PartnersLayout = ({ page }) => {
                         ))}
                     </div>
 
-                    {/* ─── SUCCESS STORIES ─── */}
+                    {/* â”€â”€â”€ SUCCESS STORIES â”€â”€â”€ */}
                     <div className="mb-16">
                         <div className="text-center mb-10">
                             <p className="text-indigo-600 text-xs font-bold uppercase tracking-widest mb-2">Partner Stories</p>
@@ -221,7 +221,7 @@ const PartnersLayout = ({ page }) => {
                                             <span className="text-white/70 text-xs">{story.hotel}</span>
                                         </div>
                                         <p className="text-white text-xs leading-relaxed italic">"{story.quote.substring(0, 100)}..."</p>
-                                        <p className="text-amber-400 text-xs mt-2 font-medium">— {story.person}</p>
+                                        <p className="text-amber-400 text-xs mt-2 font-medium">â€” {story.person}</p>
                                     </div>
                                 </div>
                             ))}
@@ -239,3 +239,4 @@ const PartnersLayout = ({ page }) => {
 }
 
 export default PartnersLayout
+

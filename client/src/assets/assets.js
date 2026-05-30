@@ -124,9 +124,9 @@ export { exclusiveOffers, offerTheme, getOfferById } from '../data/exclusiveOffe
 
 // Testimonials Dummy Data
 export const testimonials = [
-    { id: 1, name: "Emma Rodriguez", address: "Barcelona, Spain", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "I've used many booking platforms before, but none compare to the personalized experience and attention to detail that HotelDemo provides." },
-    { id: 2, name: "Liam Johnson", address: "New York, USA", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "HotelDemo exceeded my expectations. The booking process was seamless, and the hotels were absolutely top-notch. Highly recommended!" },
-    { id: 3, name: "Sophia Lee", address: "Seoul, South Korea", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "Amazing service! I always find the best luxury accommodations through HotelDemo. Their recommendations never disappoint!" }
+    { id: 1, name: "Hana Tesfaye", address: "Addis Abeba, Ethiopia", image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200", rating: 5, review: "Bekele Mola Hotels is always my first choice when traveling across Ethiopia. The rooms are spotless, the staff treats you like family, and the food is truly exceptional." },
+    { id: 2, name: "Dawit Bekele", address: "Adama, Ethiopia", image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200", rating: 4, review: "I stayed at the Adama branch for a business trip and was blown away by the quality. The service was fast, professional, and the rooms had everything I needed. Highly recommended!" },
+    { id: 3, name: "Meron Alemu", address: "Arbaminch, Ethiopia", image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200", rating: 5, review: "The Arbaminch branch has the most beautiful views I've ever seen from a hotel. Waking up to the lakes every morning was unforgettable. I'll definitely be coming back!" }
 ];
 
 // Facility Icon
@@ -142,7 +142,7 @@ export const facilityIcons = {
 // For Room Details Page
 export const roomCommonData = [
     { icon: assets.homeIcon, title: "Clean & Safe Stay", description: "A well-maintained and hygienic space just for you." },
-    { icon: assets.badgeIcon, title: "Enhanced Cleaning", description: "This host follows Staybnb's strict cleaning standards." },
+    { icon: assets.badgeIcon, title: "Enhanced Cleaning", description: "This host follows Bekele Mola Hotels' strict cleaning standards." },
     { icon: assets.locationFilledIcon, title: "Excellent Location", description: "90% of guests rated the location 5 stars." },
     { icon: assets.heartIcon, title: "Smooth Check-In", description: "100% of guests gave check-in a 5-star rating." },
 ];

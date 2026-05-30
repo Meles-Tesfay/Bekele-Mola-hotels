@@ -1,4 +1,4 @@
-const img = (id) => `https://images.unsplash.com/photo-${id}?w=1200&q=80`
+﻿const img = (id) => `https://images.unsplash.com/photo-${id}?w=1200&q=80`
 
 export const footerPages = {
     careers: {
@@ -10,7 +10,7 @@ export const footerPages = {
         heroImage: img('1556761175-5973dc0f32e7'),
         accent: 'blue',
         intro: [
-            'HotelDemo is growing fast — and we are looking for passionate people who care about travel, design, and exceptional service. Whether you are an engineer, designer, marketer, or hospitality professional, you will work on products used by thousands of guests and hotel partners every day.',
+            'Bekele Mola Hotels is growing fast â€” and we are looking for passionate people who care about travel, design, and exceptional service. Whether you are an engineer, designer, marketer, or hospitality professional, you will work on products used by thousands of guests and hotel partners every day.',
             'We offer flexible work arrangements, competitive compensation, learning budgets, and a culture that values ownership, kindness, and craft. Explore how your skills can make every stay more memorable.',
         ],
         stats: [
@@ -21,23 +21,23 @@ export const footerPages = {
         ],
         sections: [
             {
-                heading: 'Life at HotelDemo',
+                heading: 'Life at Bekele Mola Hotels',
                 subheading: 'What makes working here different',
                 type: 'cards',
                 items: [
-                    { icon: '🌍', title: 'Remote-friendly', description: 'Collaborate from anywhere with quarterly team retreats in inspiring destinations.' },
-                    { icon: '📚', title: 'Growth focus', description: 'Annual learning stipend, mentorship programs, and clear career pathways.' },
-                    { icon: '🏨', title: 'Travel perks', description: 'Discounted stays at partner properties and familiarization trips twice a year.' },
-                    { icon: '⚖️', title: 'Work-life balance', description: 'Generous PTO, parental leave, and no-meeting Fridays for deep work.' },
-                    { icon: '💡', title: 'Impact', description: 'Ship features that directly improve bookings, safety, and guest satisfaction.' },
-                    { icon: '🤝', title: 'Inclusive culture', description: 'Employee resource groups and hiring practices built on equity and respect.' },
+                    { icon: 'ðŸŒ', title: 'Remote-friendly', description: 'Collaborate from anywhere with quarterly team retreats in inspiring destinations.' },
+                    { icon: 'ðŸ“š', title: 'Growth focus', description: 'Annual learning stipend, mentorship programs, and clear career pathways.' },
+                    { icon: 'ðŸ¨', title: 'Travel perks', description: 'Discounted stays at partner properties and familiarization trips twice a year.' },
+                    { icon: 'âš–ï¸', title: 'Work-life balance', description: 'Generous PTO, parental leave, and no-meeting Fridays for deep work.' },
+                    { icon: 'ðŸ’¡', title: 'Impact', description: 'Ship features that directly improve bookings, safety, and guest satisfaction.' },
+                    { icon: 'ðŸ¤', title: 'Inclusive culture', description: 'Employee resource groups and hiring practices built on equity and respect.' },
                 ],
             },
             {
                 heading: 'Open Opportunities',
                 type: 'list',
                 items: [
-                    { title: 'Senior Frontend Engineer', description: 'React, TypeScript, design systems — build our guest and owner experiences.' },
+                    { title: 'Senior Frontend Engineer', description: 'React, TypeScript, design systems â€” build our guest and owner experiences.' },
                     { title: 'Product Designer', description: 'End-to-end UX for mobile and web across booking, hospitality, and owner tools.' },
                     { title: 'Customer Success Manager', description: 'Onboard hotel partners and drive adoption across EMEA and Americas.' },
                     { title: 'Content & SEO Specialist', description: 'Editorial strategy, destination guides, and organic growth.' },
@@ -46,10 +46,10 @@ export const footerPages = {
         ],
         contactBlock: {
             title: 'How to apply',
-            description: 'Send your résumé, portfolio (if applicable), and a short note about why HotelDemo resonates with you.',
+            description: 'Send your rÃ©sumÃ©, portfolio (if applicable), and a short note about why Bekele Mola Hotels resonates with you.',
             details: [
-                'Email: careers@hoteldemo.com',
-                'Subject line: [Role] — Your Name',
+                'Email: careers@Bekele Mola Hotels.com',
+                'Subject line: [Role] â€” Your Name',
                 'We respond to every application within ten business days.',
             ],
         },
@@ -64,7 +64,7 @@ export const footerPages = {
         heroImage: img('1504711434969-e33886168f5c'),
         accent: 'blue',
         intro: [
-            'HotelDemo connects travelers with curated hotels, exclusive offers, and hospitality experiences. Our platform serves guests in dozens of countries and partners with boutique and luxury properties worldwide.',
+            'Bekele Mola Hotels connects travelers with curated hotels, exclusive offers, and hospitality experiences. Our platform serves guests in dozens of countries and partners with boutique and luxury properties worldwide.',
             'For press inquiries, interview requests, or brand partnership opportunities, our communications team is available to provide facts, imagery, and executive commentary.',
         ],
         stats: [
@@ -78,7 +78,7 @@ export const footerPages = {
                 heading: 'Recent Highlights',
                 type: 'list',
                 items: [
-                    { title: 'HotelDemo launches hospitality marketplace', description: 'Owners can now list spa, dining, and experience services alongside room inventory.' },
+                    { title: 'Bekele Mola Hotels launches hospitality marketplace', description: 'Owners can now list spa, dining, and experience services alongside room inventory.' },
                     { title: 'Sustainability pledge 2026', description: 'Commitment to carbon-neutral operations and eco-certified property badges.' },
                     { title: 'Series B funding', description: 'Investment to expand into Asia-Pacific and enhance guest safety features.' },
                 ],
@@ -98,9 +98,9 @@ export const footerPages = {
             title: 'Press contact',
             description: 'For urgent requests or embargoed materials, reach our communications desk directly.',
             details: [
-                'Email: press@hoteldemo.com',
+                'Email: press@Bekele Mola Hotels.com',
                 'Phone: +1 (555) 014-2200',
-                'Hours: Monday–Friday, 9 AM – 6 PM EST',
+                'Hours: Mondayâ€“Friday, 9 AM â€“ 6 PM EST',
             ],
         },
     },
@@ -108,13 +108,13 @@ export const footerPages = {
     blog: {
         slug: 'blog',
         badge: 'Travel Insights',
-        titleLead: 'The HotelDemo',
+        titleLead: 'The Bekele Mola Hotels',
         titleHighlight: 'Journal',
         subtitle: 'Stories, guides, and inspiration for your next unforgettable stay.',
         heroImage: img('1414235077428-338989a2e8c0'),
         accent: 'blue',
         intro: [
-            'Our editorial team partners with travel writers, chefs, and local experts to bring you authentic destination content — from hidden boutique hotels to seasonal offer breakdowns and hospitality trends.',
+            'Our editorial team partners with travel writers, chefs, and local experts to bring you authentic destination content â€” from hidden boutique hotels to seasonal offer breakdowns and hospitality trends.',
             'Whether you are planning a summer escape, romantic weekend, or luxury retreat, the Journal helps you book smarter and travel deeper.',
         ],
         sections: [
@@ -122,10 +122,10 @@ export const footerPages = {
                 heading: 'Featured Topics',
                 type: 'cards',
                 items: [
-                    { icon: '✈️', title: 'Destination guides', description: 'Neighborhood tips, best seasons to visit, and curated hotel picks.' },
-                    { icon: '🍽️', title: 'Food & hospitality', description: 'Chef interviews, spa rituals, and on-property experiences worth booking.' },
-                    { icon: '💎', title: 'Luxury decoded', description: 'What early-bird rates, suites, and concierge perks really include.' },
-                    { icon: '🌿', title: 'Sustainable travel', description: 'Eco-certified stays and low-impact itineraries.' },
+                    { icon: 'âœˆï¸', title: 'Destination guides', description: 'Neighborhood tips, best seasons to visit, and curated hotel picks.' },
+                    { icon: 'ðŸ½ï¸', title: 'Food & hospitality', description: 'Chef interviews, spa rituals, and on-property experiences worth booking.' },
+                    { icon: 'ðŸ’Ž', title: 'Luxury decoded', description: 'What early-bird rates, suites, and concierge perks really include.' },
+                    { icon: 'ðŸŒ¿', title: 'Sustainable travel', description: 'Eco-certified stays and low-impact itineraries.' },
                 ],
             },
             {
@@ -143,9 +143,9 @@ export const footerPages = {
             title: 'Contribute or subscribe',
             description: 'Writers and photographers may pitch story ideas. Readers can receive weekly digest updates.',
             details: [
-                'Editorial: editorial@hoteldemo.com',
+                'Editorial: editorial@Bekele Mola Hotels.com',
                 'Newsletter: manage preferences from any Journal email footer',
-                'Republishing: credit HotelDemo Journal with a link to the original article',
+                'Republishing: credit Bekele Mola Hotels Journal with a link to the original article',
             ],
         },
     },
@@ -154,13 +154,13 @@ export const footerPages = {
         slug: 'partners',
         badge: 'Grow Together',
         titleLead: 'Partner',
-        titleHighlight: 'With HotelDemo',
+        titleHighlight: 'With Bekele Mola Hotels',
         subtitle: 'List your property, reach global travelers, and grow revenue with our platform.',
         heroImage: img('1566073771259-6a8506099945'),
         accent: 'blue',
         intro: [
-            'HotelDemo partners with independent boutiques, resort groups, and experience providers who share our commitment to quality and guest trust. Our tools help you manage rooms, hospitality add-ons, pricing, and availability from one dashboard.',
-            'From onboarding to marketing support, we are invested in your success — not just our commission.',
+            'Bekele Mola Hotels partners with independent boutiques, resort groups, and experience providers who share our commitment to quality and guest trust. Our tools help you manage rooms, hospitality add-ons, pricing, and availability from one dashboard.',
+            'From onboarding to marketing support, we are invested in your success â€” not just our commission.',
         ],
         stats: [
             { value: '30%', label: 'Avg. revenue uplift' },
@@ -194,7 +194,7 @@ export const footerPages = {
             title: 'Become a partner',
             description: 'Tell us about your property or business and our partnerships team will follow up.',
             details: [
-                'Email: partners@hoteldemo.com',
+                'Email: partners@Bekele Mola Hotels.com',
                 'Include: property name, location, room count, and website',
                 'Approved owners receive dashboard access after a brief verification review',
             ],
@@ -210,7 +210,7 @@ export const footerPages = {
         heroImage: img('1578683010236-d716f9a3f461'),
         accent: 'emerald',
         intro: [
-            'Welcome to the HotelDemo Help Center. Here you will find clear guidance on creating an account, searching rooms, applying offers, managing bookings, and using hospitality add-ons.',
+            'Welcome to the Bekele Mola Hotels Help Center. Here you will find clear guidance on creating an account, searching rooms, applying offers, managing bookings, and using hospitality add-ons.',
             'Most questions are answered below. For account-specific issues, note your booking reference when contacting support.',
         ],
         sections: [
@@ -239,7 +239,7 @@ export const footerPages = {
             title: 'Still need help?',
             description: 'Our guest support team is ready to assist with bookings and account issues.',
             details: [
-                'Email: help@hoteldemo.com',
+                'Email: help@Bekele Mola Hotels.com',
                 'Include your booking ID and registered email',
                 'Average response time: under 4 hours on business days',
             ],
@@ -261,7 +261,7 @@ export const footerPages = {
             { value: '<2hr', label: 'Urgent case response' },
         ],
         intro: [
-            'Your safety is foundational to everything we build. HotelDemo verifies partner properties, secures personal data, and provides clear policies so you can book with confidence.',
+            'Your safety is foundational to everything we build. Bekele Mola Hotels verifies partner properties, secures personal data, and provides clear policies so you can book with confidence.',
             'We continuously improve our standards through guest feedback, partner audits, and collaboration with industry security experts.',
         ],
         sections: [
@@ -269,10 +269,10 @@ export const footerPages = {
                 heading: 'Our Safety Pillars',
                 type: 'cards',
                 items: [
-                    { icon: '🔐', title: 'Secure accounts', description: 'Encrypted passwords, JWT authentication, and role-based access for owners and admins.' },
-                    { icon: '✅', title: 'Verified partners', description: 'Hotel owners complete profile review before listing rooms or hospitality services.' },
-                    { icon: '📋', title: 'Transparent policies', description: 'Clear cancellation, house rules, and offer terms on every listing.' },
-                    { icon: '🛡️', title: 'Data privacy', description: 'We collect only what is needed to book and improve your experience.' },
+                    { icon: 'ðŸ”', title: 'Secure accounts', description: 'Encrypted passwords, JWT authentication, and role-based access for owners and admins.' },
+                    { icon: 'âœ…', title: 'Verified partners', description: 'Hotel owners complete profile review before listing rooms or hospitality services.' },
+                    { icon: 'ðŸ“‹', title: 'Transparent policies', description: 'Clear cancellation, house rules, and offer terms on every listing.' },
+                    { icon: 'ðŸ›¡ï¸', title: 'Data privacy', description: 'We collect only what is needed to book and improve your experience.' },
                 ],
             },
             {
@@ -280,8 +280,8 @@ export const footerPages = {
                 type: 'list',
                 items: [
                     { title: 'Review property details', description: 'Read descriptions, amenities, and policies before confirming payment.' },
-                    { title: 'Communicate through official channels', description: 'Use HotelDemo messaging and support for disputes — avoid off-platform payments.' },
-                    { title: 'Report concerns immediately', description: 'Safety issues at a property should be reported to support@hoteldemo.com with photos if possible.' },
+                    { title: 'Communicate through official channels', description: 'Use Bekele Mola Hotels messaging and support for disputes â€” avoid off-platform payments.' },
+                    { title: 'Report concerns immediately', description: 'Safety issues at a property should be reported to support@Bekele Mola Hotels.com with photos if possible.' },
                     { title: 'Respect local laws', description: 'Follow destination regulations, check-in requirements, and property house rules.' },
                 ],
             },
@@ -290,7 +290,7 @@ export const footerPages = {
             title: 'Report a safety concern',
             description: 'Urgent matters receive priority handling within two hours during business hours.',
             details: [
-                'Email: safety@hoteldemo.com',
+                'Email: safety@Bekele Mola Hotels.com',
                 'Emergency on-property: contact local authorities first, then notify us',
                 'We may suspend listings pending investigation',
             ],
@@ -302,11 +302,11 @@ export const footerPages = {
         badge: 'Booking Policy',
         titleLead: 'Cancellation &',
         titleHighlight: 'Refunds',
-        subtitle: 'Understand how changes, cancellations, and refunds work on HotelDemo.',
+        subtitle: 'Understand how changes, cancellations, and refunds work on Bekele Mola Hotels.',
         heroImage: img('1507525428034-b723cf961d3e'),
         accent: 'orange',
         intro: [
-            'Plans change — we get it. Cancellation rules depend on the property, rate type, and how close you are to check-in. This page explains general policies and how to request a change.',
+            'Plans change â€” we get it. Cancellation rules depend on the property, rate type, and how close you are to check-in. This page explains general policies and how to request a change.',
             'Always review the specific cancellation terms shown before you confirm a booking, as partner policies may vary.',
         ],
         sections: [
@@ -314,7 +314,7 @@ export const footerPages = {
                 heading: 'Cancellation Types',
                 type: 'grid-text',
                 items: [
-                    { title: 'Flexible', description: 'Full refund if you cancel before the deadline shown at checkout — often 24–48 hours before arrival.' },
+                    { title: 'Flexible', description: 'Full refund if you cancel before the deadline shown at checkout â€” often 24â€“48 hours before arrival.' },
                     { title: 'Moderate', description: 'Partial refund or credit depending on timing; common for promotional rates.' },
                     { title: 'Non-refundable', description: 'No refund after booking; typically tied to deepest discounts or exclusive offers.' },
                     { title: 'Pay at Hotel', description: 'No card charge upfront; cancel per property policy to avoid no-show fees.' },
@@ -326,8 +326,8 @@ export const footerPages = {
                 items: [
                     { title: 'Locate your booking', description: 'Sign in and open My Bookings to find the reservation.' },
                     { title: 'Check eligibility', description: 'Review the cancellation window and any fees listed on your confirmation.' },
-                    { title: 'Submit request', description: 'Email support@hoteldemo.com with your booking ID if self-service cancel is unavailable.' },
-                    { title: 'Refund timing', description: 'Approved refunds process within 5–10 business days to your original payment method.' },
+                    { title: 'Submit request', description: 'Email support@Bekele Mola Hotels.com with your booking ID if self-service cancel is unavailable.' },
+                    { title: 'Refund timing', description: 'Approved refunds process within 5â€“10 business days to your original payment method.' },
                 ],
             },
             {
@@ -343,8 +343,8 @@ export const footerPages = {
             title: 'Cancellation assistance',
             description: 'We will clarify your options and coordinate with the property when needed.',
             details: [
-                'Email: cancel@hoteldemo.com',
-                'Subject: Cancel — [Booking ID]',
+                'Email: cancel@Bekele Mola Hotels.com',
+                'Subject: Cancel â€” [Booking ID]',
                 'Attach confirmation email for faster processing',
             ],
         },
@@ -359,8 +359,8 @@ export const footerPages = {
         heroImage: img('1556761175-5973dc0f32e7'),
         accent: 'blue',
         intro: [
-            'The HotelDemo support team helps you before, during, and after your stay. From booking questions to owner dashboard help, we aim for fast, friendly, and accurate resolutions.',
-            'Choose the channel that fits your situation — many issues are resolved within the same business day.',
+            'The Bekele Mola Hotels support team helps you before, during, and after your stay. From booking questions to owner dashboard help, we aim for fast, friendly, and accurate resolutions.',
+            'Choose the channel that fits your situation â€” many issues are resolved within the same business day.',
         ],
         stats: [
             { value: '<4h', label: 'Avg. email response' },
@@ -383,10 +383,10 @@ export const footerPages = {
                 heading: 'Contact Channels',
                 type: 'list',
                 items: [
-                    { title: 'General support', description: 'support@hoteldemo.com — all guest and owner inquiries.' },
-                    { title: 'Phone (urgent)', description: '+1 (555) 800-4663 — booking-day emergencies and check-in issues.' },
-                    { title: 'Live chat', description: 'Available on the website weekdays 8 AM – 10 PM local time.' },
-                    { title: 'Owner priority line', description: 'ownersupport@hoteldemo.com — verified partners only.' },
+                    { title: 'General support', description: 'support@Bekele Mola Hotels.com â€” all guest and owner inquiries.' },
+                    { title: 'Phone (urgent)', description: '+1 (555) 800-4663 â€” booking-day emergencies and check-in issues.' },
+                    { title: 'Live chat', description: 'Available on the website weekdays 8 AM â€“ 10 PM local time.' },
+                    { title: 'Owner priority line', description: 'ownersupport@Bekele Mola Hotels.com â€” verified partners only.' },
                 ],
             },
         ],
@@ -410,8 +410,8 @@ export const footerPages = {
         heroImage: img('1573496359142-b8d87734a5a2'),
         accent: 'emerald',
         intro: [
-            'HotelDemo believes travel should be welcoming for everyone. We work with partners to surface accessibility information, improve our digital products for assistive technologies, and train support staff on inclusive service.',
-            'We are continuously improving — your feedback helps us prioritize what matters most to our community.',
+            'Bekele Mola Hotels believes travel should be welcoming for everyone. We work with partners to surface accessibility information, improve our digital products for assistive technologies, and train support staff on inclusive service.',
+            'We are continuously improving â€” your feedback helps us prioritize what matters most to our community.',
         ],
         sections: [
             {
@@ -428,26 +428,26 @@ export const footerPages = {
                 heading: 'Property Accessibility',
                 type: 'cards',
                 items: [
-                    { icon: '♿', title: 'Mobility', description: 'Partners may list step-free access, elevators, and accessible rooms.' },
-                    { icon: '👁️', title: 'Visual & hearing', description: 'Braille, hearing loops, and visual alarms where properties provide them.' },
-                    { icon: '🐕', title: 'Service animals', description: 'Policies vary by property — details shown on each listing when supplied.' },
-                    { icon: '📞', title: 'Assisted support', description: 'Support can help filter or confirm accessibility features before you book.' },
+                    { icon: 'â™¿', title: 'Mobility', description: 'Partners may list step-free access, elevators, and accessible rooms.' },
+                    { icon: 'ðŸ‘ï¸', title: 'Visual & hearing', description: 'Braille, hearing loops, and visual alarms where properties provide them.' },
+                    { icon: 'ðŸ•', title: 'Service animals', description: 'Policies vary by property â€” details shown on each listing when supplied.' },
+                    { icon: 'ðŸ“ž', title: 'Assisted support', description: 'Support can help filter or confirm accessibility features before you book.' },
                 ],
             },
             {
                 heading: 'Request accommodations',
                 type: 'faq',
                 items: [
-                    { title: 'Need help finding an accessible room?', description: 'Email access@hoteldemo.com with your dates, destination, and requirements.' },
-                    { title: 'Report a barrier on our website', description: 'Describe the page and issue — we treat accessibility bugs as high priority.' },
+                    { title: 'Need help finding an accessible room?', description: 'Email access@Bekele Mola Hotels.com with your dates, destination, and requirements.' },
+                    { title: 'Report a barrier on our website', description: 'Describe the page and issue â€” we treat accessibility bugs as high priority.' },
                 ],
             },
         ],
         contactBlock: {
             title: 'Accessibility feedback',
-            description: 'We welcome suggestions and reports to improve inclusive travel on HotelDemo.',
+            description: 'We welcome suggestions and reports to improve inclusive travel on Bekele Mola Hotels.',
             details: [
-                'Email: access@hoteldemo.com',
+                'Email: access@Bekele Mola Hotels.com',
                 'Response within 3 business days',
                 'Optional: phone support at +1 (555) 800-4663 for booking assistance',
             ],
@@ -458,3 +458,4 @@ export const footerPages = {
 export const getFooterPage = (slug) => footerPages[slug] || null
 
 export const footerPageSlugs = Object.keys(footerPages)
+

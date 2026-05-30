@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { BackLink, ContactPanel, usePageScroll } from './FooterShared'
 
 const unsplash = (id) => `https://images.unsplash.com/photo-${id}?w=900&q=80`
@@ -9,7 +9,7 @@ const pressArticles = [
         category: 'Product Launch',
         date: 'April 2026',
         readTime: '3 min read',
-        title: 'HotelDemo Launches Hospitality Marketplace',
+        title: 'Bekele Mola Hotels Launches Hospitality Marketplace',
         excerpt: 'Owners can now list spa, dining, and experience services alongside room inventory, creating a fully integrated stay platform.',
         author: 'Editorial Team',
     },
@@ -28,22 +28,22 @@ const pressArticles = [
         date: 'February 2026',
         readTime: '5 min read',
         title: 'Series B Funding to Expand Asia-Pacific',
-        excerpt: 'Investment to expand into Japan, Singapore, and Southeast Asia — with a new dedicated guest safety and verification center.',
+        excerpt: 'Investment to expand into Japan, Singapore, and Southeast Asia â€” with a new dedicated guest safety and verification center.',
         author: 'Communications Desk',
     },
 ]
 
 const brandAssets = [
     {
-        icon: '🎨',
+        icon: 'ðŸŽ¨',
         title: 'Logo & Brand Guidelines',
         format: 'SVG + PDF',
         size: '12 MB',
-        desc: 'Primary and secondary logos, color palette (#49B9FF, navy, white), typography — Playfair Display and system sans.',
+        desc: 'Primary and secondary logos, color palette (#49B9FF, navy, white), typography â€” Playfair Display and system sans.',
         color: 'from-blue-500 to-indigo-600',
     },
     {
-        icon: '👤',
+        icon: 'ðŸ‘¤',
         title: 'Executive Bios & Headshots',
         format: 'DOCX + JPEG',
         size: '34 MB',
@@ -51,7 +51,7 @@ const brandAssets = [
         color: 'from-purple-500 to-pink-600',
     },
     {
-        icon: '📸',
+        icon: 'ðŸ“¸',
         title: 'Product Screenshots',
         format: 'PNG (4K)',
         size: '88 MB',
@@ -59,7 +59,7 @@ const brandAssets = [
         color: 'from-emerald-500 to-teal-600',
     },
     {
-        icon: '📄',
+        icon: 'ðŸ“„',
         title: 'Press Fact Sheet',
         format: 'PDF',
         size: '2 MB',
@@ -76,11 +76,11 @@ const PressLayout = ({ page }) => {
 
     return (
         <div className="min-h-screen bg-[#faf8f5]">
-            {/* ─── MASTHEAD (hero, preserved) ─── */}
+            {/* â”€â”€â”€ MASTHEAD (hero, preserved) â”€â”€â”€ */}
             <div className="border-y-4 border-black bg-white">
                 <div className="max-w-6xl mx-auto px-6 pt-28 pb-6 text-center">
                     <BackLink className="!mb-6" />
-                    <p className="text-[10px] uppercase tracking-[0.5em] text-gray-500 mb-4">{page.badge} · EST. 2010</p>
+                    <p className="text-[10px] uppercase tracking-[0.5em] text-gray-500 mb-4">{page.badge} Â· EST. 2010</p>
                     <h1 className="font-playfair text-6xl md:text-8xl font-black text-black uppercase leading-none tracking-tight">
                         {page.titleLead}
                     </h1>
@@ -91,7 +91,7 @@ const PressLayout = ({ page }) => {
 
             <img src={page.heroImage} alt="" className="w-full h-[40vh] md:h-[50vh] object-cover grayscale hover:grayscale-0 transition-all duration-700" />
 
-            {/* ─── STATS GRID ─── */}
+            {/* â”€â”€â”€ STATS GRID â”€â”€â”€ */}
             <div className="max-w-6xl mx-auto px-6 py-12">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-black border border-black mb-16">
                     {page.stats.map((s) => (
@@ -102,7 +102,7 @@ const PressLayout = ({ page }) => {
                     ))}
                 </div>
 
-                {/* ─── INTRO ─── */}
+                {/* â”€â”€â”€ INTRO â”€â”€â”€ */}
                 <div className="columns-1 md:columns-3 gap-8 space-y-0 mb-16">
                     {page.intro.map((p, i) => (
                         <p key={i} className="text-gray-700 text-sm leading-relaxed mb-4 break-inside-avoid first:text-lg first:font-serif first:text-black">{p}</p>
@@ -111,7 +111,7 @@ const PressLayout = ({ page }) => {
 
                 <hr className="my-4 border-black" />
 
-                {/* ─── NEWS ARTICLES ─── */}
+                {/* â”€â”€â”€ NEWS ARTICLES â”€â”€â”€ */}
                 <div className="mt-16 mb-20">
                     <div className="flex items-baseline gap-4 mb-12">
                         <h2 className="font-playfair text-4xl font-bold uppercase tracking-wide">{news.heading}</h2>
@@ -135,7 +135,7 @@ const PressLayout = ({ page }) => {
                                 <div className="p-6 flex flex-col flex-1">
                                     <div className="flex items-center gap-3 text-xs text-gray-400 mb-3">
                                         <span>{article.date}</span>
-                                        <span>·</span>
+                                        <span>Â·</span>
                                         <span>{article.readTime}</span>
                                     </div>
                                     <h3 className="font-playfair text-xl font-bold text-gray-900 mb-3 group-hover:text-black leading-snug">{article.title}</h3>
@@ -143,7 +143,7 @@ const PressLayout = ({ page }) => {
                                     <div className="flex items-center justify-between mt-5 pt-4 border-t border-gray-100">
                                         <span className="text-xs text-gray-400">{article.author}</span>
                                         <span className="text-xs font-semibold text-black group-hover:underline transition-all">
-                                            Read More →
+                                            Read More â†’
                                         </span>
                                     </div>
                                 </div>
@@ -154,7 +154,7 @@ const PressLayout = ({ page }) => {
 
                 <hr className="my-4 border-dashed border-gray-300" />
 
-                {/* ─── BRAND RESOURCES ─── */}
+                {/* â”€â”€â”€ BRAND RESOURCES â”€â”€â”€ */}
                 <div className="mt-16 mb-20">
                     <div className="flex items-baseline gap-4 mb-10">
                         <h2 className="font-playfair text-4xl font-bold">{brand.heading}</h2>
@@ -192,7 +192,7 @@ const PressLayout = ({ page }) => {
                                     <p className="text-sm text-gray-500 mt-4 leading-relaxed">{asset.desc}</p>
                                     {requestedAsset === asset.title && (
                                         <p className="text-xs text-emerald-600 font-semibold mt-3 bg-emerald-50 px-3 py-2 rounded-lg">
-                                            ✓ Request received! Our comms team will email assets within 24 hours.
+                                            âœ“ Request received! Our comms team will email assets within 24 hours.
                                         </p>
                                     )}
                                 </div>
@@ -201,7 +201,7 @@ const PressLayout = ({ page }) => {
                     </div>
                 </div>
 
-                {/* ─── PRESS CONTACT ─── */}
+                {/* â”€â”€â”€ PRESS CONTACT â”€â”€â”€ */}
                 <div className="bg-black text-white rounded-3xl p-10 md:p-14 flex flex-col md:flex-row gap-10 items-start">
                     <div className="flex-1">
                         <p className="text-gray-400 text-xs uppercase tracking-[0.4em] mb-3">Press Contact</p>
@@ -230,3 +230,4 @@ const PressLayout = ({ page }) => {
 }
 
 export default PressLayout
+

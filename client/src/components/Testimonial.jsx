@@ -15,7 +15,7 @@ const Testimonial = () => {
                 </h2>
                 <div className="max-w-2xl relative">
                     <p className='text-gray-500 text-lg leading-relaxed transform transition-all duration-500 hover:text-gray-800 hover:-translate-y-1 hover:shadow-sm p-2 rounded-xl'>
-                        Discover why discerning travelers consistently choose HotelDemo for their exclusive and luxurious accommodations around the world.
+                        Discover why travelers across Ethiopia consistently choose Bekele Mola Hotels for their comfortable and memorable stays.
                     </p>
                 </div>
             </div>

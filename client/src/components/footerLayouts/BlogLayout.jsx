@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+﻿import React, { useState } from 'react'
 import { BackLink, usePageScroll } from './FooterShared'
 import { FooterIcon } from './FooterIcons'
 
@@ -9,11 +9,11 @@ const articles = [
         readTime: '6 min',
         author: 'Sofia Almeida',
         title: 'Five Coastal Hotels Perfect for a Summer Escape',
-        excerpt: 'From the rugged Algarve cliffs to the turquoise Amalfi shores — our curated selection of oceanfront stays that deliver on every promise of sun, sea, and service.',
+        excerpt: 'From the rugged Algarve cliffs to the turquoise Amalfi shores â€” our curated selection of oceanfront stays that deliver on every promise of sun, sea, and service.',
         body: [
-            'Summer travel is rarely about finding the cheapest room — it is about matching the coastline to the mood you want when you arrive. We spent three months visiting properties that balance design, service, and access to the water without feeling overcrowded or overproduced.',
-            'Each hotel on this list was chosen for consistency: thoughtful check-in, rooms that stay cool in peak heat, and dining that feels local rather than generic. If you are booking through HotelDemo, pair an early check-in request with our seasonal breakfast package for the smoothest first morning.',
-            'Start with two nights minimum at any coastal property — one day to settle, one to explore — then extend only if the hotel offers experiences you cannot replicate elsewhere, such as private boat transfers or chef-led market tours.',
+            'Summer travel is rarely about finding the cheapest room â€” it is about matching the coastline to the mood you want when you arrive. We spent three months visiting properties that balance design, service, and access to the water without feeling overcrowded or overproduced.',
+            'Each hotel on this list was chosen for consistency: thoughtful check-in, rooms that stay cool in peak heat, and dining that feels local rather than generic. If you are booking through Bekele Mola Hotels, pair an early check-in request with our seasonal breakfast package for the smoothest first morning.',
+            'Start with two nights minimum at any coastal property â€” one day to settle, one to explore â€” then extend only if the hotel offers experiences you cannot replicate elsewhere, such as private boat transfers or chef-led market tours.',
         ],
         tag: 'Travel',
         featured: true,
@@ -27,7 +27,7 @@ const articles = [
         excerpt: 'Spa timing, private dinners, and room upgrade secrets that transform a weekend break into a once-in-a-lifetime memory.',
         body: [
             'A two-night romantic trip works best when you front-load delight: arrive before sunset, confirm spa slots before you land, and reserve dinner for night one so night two stays unplanned and relaxed.',
-            'Room upgrades are most reliable when requested with a note about the occasion — anniversaries and proposals get priority at partner hotels more often than generic “best available” asks. Ask for a corner room or suite with a view if noise matters to you.',
+            'Room upgrades are most reliable when requested with a note about the occasion â€” anniversaries and proposals get priority at partner hotels more often than generic â€œbest availableâ€ asks. Ask for a corner room or suite with a view if noise matters to you.',
             'Close the stay with a slow morning: late checkout when available, in-room breakfast, and a short walk before departure. The goal is continuity, not a packed schedule.',
         ],
         tag: 'Romance',
@@ -41,9 +41,9 @@ const articles = [
         title: 'Booking 60 Days Ahead: Inside the Luxury Retreat Offer',
         excerpt: 'Maximize savings without sacrificing flexibility. We unpack the math behind early-bird pricing and when to hold for a better deal.',
         body: [
-            'Early-bird offers reward planning, but not every date benefits equally. Shoulder seasons — late spring and early autumn — often deliver the strongest discount-to-flexibility ratio because demand is steady but not peak.',
+            'Early-bird offers reward planning, but not every date benefits equally. Shoulder seasons â€” late spring and early autumn â€” often deliver the strongest discount-to-flexibility ratio because demand is steady but not peak.',
             'Read cancellation terms before you commit: the best luxury retreat offers include a partial refund window or one free date change. If those are missing, treat the booking as non-refundable and only lock in when your dates are firm.',
-            'Combine the 60-day offer with loyalty perks where available: suite upgrades, resort credits, or spa vouchers frequently stack at partner properties when booked through HotelDemo.',
+            'Combine the 60-day offer with loyalty perks where available: suite upgrades, resort credits, or spa vouchers frequently stack at partner properties when booked through Bekele Mola Hotels.',
         ],
         tag: 'Tips',
         featured: false,
@@ -54,11 +54,11 @@ const articles = [
         readTime: '5 min',
         author: 'Lena Braun',
         title: 'Hospitality Beyond the Room: Spa, Dining & Tours',
-        excerpt: "A guest guide to our new in-stay services marketplace — how to book a private massage, reserve a sunset boat tour, and pair it with a chef's tasting menu.",
+        excerpt: "A guest guide to our new in-stay services marketplace â€” how to book a private massage, reserve a sunset boat tour, and pair it with a chef's tasting menu.",
         body: [
             'In-stay services are where modern hotels differentiate: the room gets you there, but spa, dining, and curated tours define whether guests leave with a story worth retelling.',
-            'Book spa and dining on day zero — even from the car — because prime slots disappear fast on weekends. Tours are best scheduled for your second full day, when you know weather and energy levels.',
-            'Look for bundles: tasting menu plus wine pairing, or massage plus pool access, often cost less than à la carte and reduce decision fatigue during a short stay.',
+            'Book spa and dining on day zero â€” even from the car â€” because prime slots disappear fast on weekends. Tours are best scheduled for your second full day, when you know weather and energy levels.',
+            'Look for bundles: tasting menu plus wine pairing, or massage plus pool access, often cost less than Ã  la carte and reduce decision fatigue during a short stay.',
         ],
         tag: 'Lifestyle',
         featured: false,
@@ -68,16 +68,16 @@ const articles = [
 const topicCards = [
     {
         title: 'Destination guides',
-        icon: '✈️',
+        icon: 'âœˆï¸',
         gradient: 'from-rose-500 to-orange-500',
         description: 'Neighborhood tips, best seasons to visit, and curated hotel picks.',
-        body: 'We map cities and coastlines through local writers — not generic listicles. Every guide includes where to stay, when to go, and what to book before you arrive so your first day feels intentional.',
+        body: 'We map cities and coastlines through local writers â€” not generic listicles. Every guide includes where to stay, when to go, and what to book before you arrive so your first day feels intentional.',
         highlights: ['City & coastal playbooks', 'Seasonal timing charts', 'Curated boutique shortlists'],
         articleCount: 12,
     },
     {
         title: 'Food & hospitality',
-        icon: '🍽️',
+        icon: 'ðŸ½ï¸',
         gradient: 'from-amber-600 to-yellow-500',
         description: 'Chef interviews, spa rituals, and on-property experiences worth booking.',
         body: 'The best stays are defined by what happens off the pillow: tasting menus, thermal circuits, and hosted tours. We interview chefs and wellness directors to surface experiences worth adding to your itinerary.',
@@ -86,16 +86,16 @@ const topicCards = [
     },
     {
         title: 'Luxury decoded',
-        icon: '💎',
+        icon: 'ðŸ’Ž',
         gradient: 'from-violet-700 to-purple-500',
         description: 'What early-bird rates, suites, and concierge perks really include.',
-        body: 'Luxury pricing is rarely opaque on purpose — it is just poorly explained. We translate rate codes, suite categories, and loyalty stacking so you know exactly what you are paying for before checkout.',
+        body: 'Luxury pricing is rarely opaque on purpose â€” it is just poorly explained. We translate rate codes, suite categories, and loyalty stacking so you know exactly what you are paying for before checkout.',
         highlights: ['Early-bird math explained', 'Suite upgrade strategies', 'Concierge perk checklists'],
         articleCount: 7,
     },
     {
         title: 'Sustainable travel',
-        icon: '🌿',
+        icon: 'ðŸŒ¿',
         gradient: 'from-teal-700 to-emerald-500',
         description: 'Eco-certified stays and low-impact itineraries.',
         body: 'Responsible travel does not mean sacrificing comfort. We highlight certified properties, low-impact transport options, and itineraries that support local communities without adding planning friction.',
@@ -161,7 +161,7 @@ const LongFormArticle = ({ article, featured = false }) => (
                     </span>
                 )}
                 <span className="text-xs text-neutral-500">
-                    {article.date} · {article.readTime} read
+                    {article.date} Â· {article.readTime} read
                 </span>
             </div>
 
@@ -190,7 +190,7 @@ const LongFormArticle = ({ article, featured = false }) => (
                 </div>
                 <div>
                     <p className="text-sm font-medium text-neutral-300 group-hover:text-white transition-colors duration-300">{article.author}</p>
-                    <p className="text-xs text-neutral-500">HotelDemo Journal</p>
+                    <p className="text-xs text-neutral-500">Bekele Mola Hotels Journal</p>
                 </div>
                 <span className="ml-auto text-xs text-neutral-600 group-hover:text-rose-400/80 transition-colors duration-300 opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300">
                     Continue reading
@@ -259,7 +259,7 @@ const BlogLayout = ({ page }) => {
                         <div className="flex-1">
                             <p className="text-rose-400 text-xs font-bold uppercase tracking-widest mb-2">Stay Inspired</p>
                             <h3 className="font-playfair text-2xl font-bold text-white mb-2">Get the Weekly Journal</h3>
-                            <p className="text-neutral-400 text-sm">Curated hotel stories, destination tips, and exclusive offer previews — every Friday morning.</p>
+                            <p className="text-neutral-400 text-sm">Curated hotel stories, destination tips, and exclusive offer previews â€” every Friday morning.</p>
                         </div>
                         {!subscribed ? (
                             <form onSubmit={(e) => { e.preventDefault(); setSubscribed(true); }} className="flex gap-3 w-full md:w-auto">
@@ -275,7 +275,7 @@ const BlogLayout = ({ page }) => {
                             </form>
                         ) : (
                             <div className="bg-emerald-500/20 border border-emerald-500/30 px-6 py-4 rounded-2xl text-center">
-                                <p className="text-sm font-bold text-emerald-400">✓ Subscribed Successfully!</p>
+                                <p className="text-sm font-bold text-emerald-400">âœ“ Subscribed Successfully!</p>
                                 <p className="text-xs text-emerald-400/80 mt-1">Thank you for joining our weekly journal.</p>
                             </div>
                         )}
@@ -288,3 +288,4 @@ const BlogLayout = ({ page }) => {
 }
 
 export default BlogLayout
+
