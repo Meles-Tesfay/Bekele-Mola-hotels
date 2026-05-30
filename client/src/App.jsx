@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Footer from './components/Footer'
 import AllRooms from './pages/AllRooms'
 import RoomDetail from './pages/RoomDetail'
+import BranchPage from './pages/BranchPage'
 import MyBookings from './pages/MyBookings'
 import Experience from './pages/Experience'
 import About from './pages/About'
@@ -56,6 +57,7 @@ const App = () => {
             <Route path='/' element={<Home />} />
             <Route path='/rooms' element={<AllRooms />} />
             <Route path='/rooms/:id' element={<RoomDetail />} />
+            <Route path='/branch/:slug' element={<BranchPage />} />
             <Route path='/my-bookings' element={<MyBookings />} />
             <Route path='/experience' element={<Experience />} />
             <Route path='/hospitality' element={<Hospitality />} />

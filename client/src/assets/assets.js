@@ -72,10 +72,47 @@ export const assets = {
 }
 
 export const cities = [
-    "Dubai",
-    "Singapore",
-    "New York",
-    "London",
+    "Adama",
+    "Arbaminch",
+    "Addis Abeba",
+    "Meki",
+];
+
+import adamaHero from './adama/10001.jpg';
+import arbaminchHero from './arbaminch/10001.jpg';
+import addisAbebaHero from './adiss ababa/10001.jpg';
+// Meki doesn't have its own photos, so using one from Adama
+import mekiHero from './adama/10002.jpg';
+
+export const branches = [
+    {
+        slug: 'adama',
+        name: 'Adama',
+        tagline: 'Experience the warm breeze of Adama',
+        heroImage: adamaHero,
+        description: 'A modern luxury hotel in the heart of Adama, featuring exquisite dining, a relaxing pool, and spacious rooms tailored for both business and leisure travelers.'
+    },
+    {
+        slug: 'arbaminch',
+        name: 'Arbaminch',
+        tagline: 'Nature meets luxury in Arbaminch',
+        heroImage: arbaminchHero,
+        description: 'Overlooking the majestic lakes Abaya and Chamo, our Arbaminch branch offers a serene gateway to explore the natural wonders of the South while enjoying top-tier comfort.'
+    },
+    {
+        slug: 'addis-abeba',
+        name: 'Addis Abeba',
+        tagline: 'Urban elegance in the capital',
+        heroImage: addisAbebaHero,
+        description: 'Located in the vibrant center of Addis Abeba, this flagship branch combines world-class amenities, panoramic city views, and unparalleled hospitality.'
+    },
+    {
+        slug: 'meki',
+        name: 'Meki',
+        tagline: 'A peaceful lakeside retreat',
+        heroImage: mekiHero,
+        description: 'A tranquil getaway nestled near Lake Ziway, offering the perfect blend of natural beauty and premium resort facilities for a refreshing escape.'
+    }
 ];
 
 // Exclusive Offers — rich data in ../data/exclusiveOffersData.js

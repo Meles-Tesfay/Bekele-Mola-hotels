@@ -28,12 +28,12 @@ const Hero = () => {
             
             <div className="relative z-10 w-full animate-fade-in-up mt-10">
                 <h1 className='font-playfair text-3xl md:text-5xl lg:text-[58px] lg:leading-[68px] font-bold max-w-2xl drop-shadow-xl leading-tight group/title cursor-default transition-all duration-500 hover:translate-x-3 hover:drop-shadow-[0_0_30px_rgba(73,185,255,0.4)]'>
-                    Discover Your Perfect <br className="hidden md:block" />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#49B9FF] to-blue-200 transition-all duration-500 group-hover/title:from-[#FF4D00] group-hover/title:to-[#FF8C00]">Getaway</span> Destination
+                    Welcome to <br className="hidden md:block" />
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#49B9FF] to-blue-200 transition-all duration-500 group-hover/title:from-[#FF4D00] group-hover/title:to-[#FF8C00]">Bekele Mola Hotels</span>
                 </h1>
                 
                 <p className='max-w-lg mt-4 text-sm md:text-base text-gray-300 font-light drop-shadow-md leading-relaxed transition-all duration-500 hover:text-white hover:translate-x-1 cursor-default'>
-                    Unparalleled luxury and comfort await at the world's most exclusive rooms and resorts. Start your unforgettable journey today.
+                    Experience unparalleled hospitality across Ethiopia. From urban elegance to tranquil lakeside retreats, discover comfort at its finest.
                 </p>
 
                 <div className='inline-flex items-center gap-3 bg-white/10 backdrop-blur-md border border-transparent px-4 py-2 rounded-xl text-sm font-medium hover:bg-white/20 transition-all cursor-default mt-5 shadow-sm'>

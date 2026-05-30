@@ -237,11 +237,9 @@ const Navbar = () => {
             <div className={`flex items-center justify-between w-full transition-all duration-500 rounded-[3.5rem] px-5 md:px-8 lg:px-10 ${theme.bg}`}>
 
                 <Link to='/' className="group flex items-center gap-2">
-                    <img 
-                        src={assets.logo} 
-                        alt="logo" 
-                        className={`h-11 transition-all duration-500 group-hover:scale-105 ${theme.logoInvert ? "invert opacity-80" : ""}`} 
-                    />
+                    <span className={`font-playfair text-xl md:text-2xl font-bold tracking-tight transition-all duration-500 group-hover:scale-105 ${theme.logoInvert ? "text-gray-900" : "text-white"}`}>
+                        Bekele Mola Hotels
+                    </span>
                 </Link>
 
                 <div className="hidden md:flex items-center gap-1 lg:gap-2">
@@ -321,7 +319,7 @@ const Navbar = () => {
             <div className={`fixed top-0 left-0 w-full h-screen bg-white flex flex-col md:hidden transition-all duration-500 ease-in-out ${isMenuOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}`}>
                 <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
                     <Link to="/" onClick={() => setIsMenuOpen(false)} className="flex items-center">
-                        <img src={assets.logo} alt="logo" className="h-7 invert opacity-80" />
+                        <span className="font-playfair text-xl font-bold text-gray-900">Bekele Mola Hotels</span>
                     </Link>
                     <button onClick={() => setIsMenuOpen(false)} className="p-2 rounded-xl hover:bg-gray-100">
                         <img src={assets.closeIcon} alt="close" className="h-5 w-5" />

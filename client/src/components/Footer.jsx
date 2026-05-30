@@ -27,7 +27,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500/30 pb-6">
 
                     <div className="md:max-w-96 ">
-                        <img alt="logo" className="mb-4 h-8 md:h-9 invert opacity-80" src={assets.logo} />
+                        <span className="font-playfair text-2xl font-bold text-gray-900 mb-4 inline-block">Bekele Mola Hotels</span>
                         <p className="mt-6 text-sm">
                             Book your perfect stay with us. We offer seamless hotel reservations, trusted listings, and the best prices to make your travel experience smooth, comfortable, and memorable.
                         </p>
@@ -55,6 +55,16 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                 ))}
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h2 className="font-playfair text-xl text-gray-800">BRANCHES</h2>
+                            <ul className="mt-3 flex flex-col gap-2 text-sm">
+                                <li><Link to="/branch/adama" onClick={scrollTop} className="hover:text-[#49B9FF] transition-colors">Adama</Link></li>
+                                <li><Link to="/branch/arbaminch" onClick={scrollTop} className="hover:text-[#49B9FF] transition-colors">Arbaminch</Link></li>
+                                <li><Link to="/branch/addis-abeba" onClick={scrollTop} className="hover:text-[#49B9FF] transition-colors">Addis Abeba</Link></li>
+                                <li><Link to="/branch/meki" onClick={scrollTop} className="hover:text-[#49B9FF] transition-colors">Meki</Link></li>
                             </ul>
                         </div>
 
@@ -93,7 +103,7 @@ const Footer = () => {
 
                 <div className='flex flex-col md:flex-row gap-2 items-center justify-between py-5'>
                     <p className="pt-4 text-center text-xs md:text-sm pb-5">
-                        Copyright ©{new Date().getFullYear()} - Biniyam Taye .All rights reserved.
+                        Copyright ©{new Date().getFullYear()} - Bekele Mola Hotels. All rights reserved.
                     </p>
                     <ul className="flex items-center gap-4 text-sm">
                         <li><Link to="/help" onClick={scrollTop} className="hover:text-[#49B9FF]">Privacy</Link></li>
