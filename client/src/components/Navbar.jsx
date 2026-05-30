@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { assets } from "../assets/assets";
+import { assets, branches } from "../assets/assets";
 import { useAppContext } from "../context/AppContext";
 
 const BookIcon = () => (
@@ -245,7 +245,46 @@ const Navbar = () => {
 
                 <div className="hidden md:flex items-center gap-1 lg:gap-2">
                     {navLinks.map((link, i) => {
-                        const isActive = location.pathname === link.path;
+                        const isActive = location.pathname === link.path || (link.name === 'Branches' && location.pathname.startsWith('/branch/'));
+                        
+                        if (link.name === 'Branches') {
+                            return (
+                                <div key={i} className="relative group/navdropdown h-full flex items-center">
+                                    <Link
+                                        to={link.path}
+                                        className={`relative px-5 py-2.5 text-base font-medium rounded-xl transition-all duration-300 flex items-center gap-1
+                                            ${theme.linkText}
+                                            ${isActive ? theme.activeLink : ""}`}
+                                    >
+                                        {link.name}
+                                        <svg className={`w-4 h-4 transition-transform duration-300 group-hover/navdropdown:rotate-180 ${isActive ? theme.activeLink : theme.linkText}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                        <span className={`absolute bottom-1.5 left-5 right-5 h-[2px] rounded-full scale-x-0 group-hover/navdropdown:scale-x-100 transition-transform duration-300 origin-left
+                                            ${isActive ? "scale-x-100" : ""}
+                                            ${theme.activeIndicator}`}
+                                        />
+                                    </Link>
+                                    
+                                    {/* Dropdown Menu */}
+                                    <div className="absolute left-0 top-[100%] pt-2 opacity-0 invisible group-hover/navdropdown:opacity-100 group-hover/navdropdown:visible transition-all duration-300 w-56 z-50">
+                                        <div className="bg-white rounded-xl shadow-xl border border-gray-100 py-3 flex flex-col overflow-hidden">
+                                            {branches.map((branch) => (
+                                                <Link 
+                                                    key={branch.slug} 
+                                                    to={`/branch/${branch.slug}`}
+                                                    className="px-5 py-2.5 text-sm font-medium text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors flex items-center gap-3"
+                                                >
+                                                    <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+                                                    {branch.name}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        }
+
                         return (
                             <Link
                                 key={i}
