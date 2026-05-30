@@ -12,20 +12,20 @@ const BookIcon = () => (
 const getNavbarTheme = (pathname, isScrolled) => {
     // Default theme for standard pages (Rooms, About, Hospitality, etc.) when scrolled or always
     const defaultScrolled = {
-        bg: "bg-[#F6F9FC]/95 text-gray-700 backdrop-blur-xl py-4 md:py-5 shadow-[0_40px_100px_rgba(0,0,0,0.25)] border border-gray-200",
-        text: "text-gray-700",
-        linkText: "text-gray-600 hover:text-gray-900 hover:bg-gray-100",
+        bg: "bg-[#F6F9FC]/95 text-gray-900 backdrop-blur-xl py-4 md:py-5 shadow-[0_40px_100px_rgba(0,0,0,0.25)] border border-gray-200",
+        text: "text-gray-900",
+        linkText: "text-gray-900 font-medium hover:text-blue-600 hover:bg-gray-100",
         logoInvert: true,
-        activeLink: "text-blue-600 font-bold",
+        activeLink: "text-blue-700 font-extrabold",
         activeIndicator: "bg-[#49B9FF]"
     };
 
     const defaultTop = {
-        bg: "bg-white/10 backdrop-blur-md border border-transparent shadow-[0_40px_100px_rgba(0,0,0,0.2)] py-5 md:py-6",
+        bg: "bg-black/20 backdrop-blur-md border border-transparent shadow-[0_40px_100px_rgba(0,0,0,0.2)] py-5 md:py-6",
         text: "text-white",
-        linkText: "text-white/80 hover:text-white hover:bg-white/10",
+        linkText: "text-white font-medium hover:bg-white/20",
         logoInvert: false,
-        activeLink: "text-white font-bold",
+        activeLink: "text-white font-extrabold",
         activeIndicator: "bg-white"
     };
 

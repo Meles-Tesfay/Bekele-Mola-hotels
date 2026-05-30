@@ -27,12 +27,12 @@ const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent pointer-events-none"></div>
             
             <div className="relative z-10 w-full animate-fade-in-up mt-10">
-                <h1 className='font-playfair text-3xl md:text-5xl lg:text-[58px] lg:leading-[68px] font-bold max-w-2xl drop-shadow-xl leading-tight group/title cursor-default transition-all duration-500 hover:translate-x-3 hover:drop-shadow-[0_0_30px_rgba(73,185,255,0.4)]'>
+                <h1 className='font-playfair text-4xl md:text-6xl lg:text-[72px] lg:leading-[80px] font-extrabold max-w-3xl drop-shadow-2xl leading-tight group/title cursor-default transition-all duration-500 hover:translate-x-3 hover:drop-shadow-[0_0_30px_rgba(73,185,255,0.4)]'>
                     Welcome to <br className="hidden md:block" />
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#49B9FF] to-blue-200 transition-all duration-500 group-hover/title:from-[#FF4D00] group-hover/title:to-[#FF8C00]">Bekele Mola Hotels</span>
                 </h1>
                 
-                <p className='max-w-lg mt-4 text-sm md:text-base text-gray-300 font-light drop-shadow-md leading-relaxed transition-all duration-500 hover:text-white hover:translate-x-1 cursor-default'>
+                <p className='max-w-xl mt-6 text-base md:text-xl text-white font-medium drop-shadow-lg leading-relaxed transition-all duration-500 hover:translate-x-1 cursor-default'>
                     Experience unparalleled hospitality across Ethiopia. From urban elegance to tranquil lakeside retreats, discover comfort at its finest.
                 </p>
 

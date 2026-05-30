@@ -112,6 +112,20 @@ const BranchPage = () => {
                     </div>
                 )}
 
+                {/* Image Gallery */}
+                {localBranchInfo.images && localBranchInfo.images.length > 0 && (
+                    <div className="mb-16">
+                        <h3 className="font-playfair text-2xl font-bold text-gray-900 mb-6">Gallery</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            {localBranchInfo.images.map((img, idx) => (
+                                <div key={idx} className="h-48 md:h-64 rounded-2xl overflow-hidden shadow-md group">
+                                    <img src={img} alt={`${localBranchInfo.name} gallery ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
                 {/* Rooms Section */}
                 <div id="rooms" className="mb-20 pt-10">
                     <div className="flex items-center gap-4 mb-10">

@@ -90,6 +90,7 @@ export const branches = [
         name: 'Adama',
         tagline: 'Experience the warm breeze of Adama',
         heroImage: adamaHero,
+        images: [adamaHero, '/src/assets/adama/10003.jpg', '/src/assets/adama/10006.jpg'],
         description: 'A modern luxury hotel in the heart of Adama, featuring exquisite dining, a relaxing pool, and spacious rooms tailored for both business and leisure travelers.'
     },
     {
@@ -97,6 +98,7 @@ export const branches = [
         name: 'Arbaminch',
         tagline: 'Nature meets luxury in Arbaminch',
         heroImage: arbaminchHero,
+        images: [arbaminchHero, '/src/assets/arbaminch/10002.jpg', '/src/assets/arbaminch/10008.jpg'],
         description: 'Overlooking the majestic lakes Abaya and Chamo, our Arbaminch branch offers a serene gateway to explore the natural wonders of the South while enjoying top-tier comfort.'
     },
     {
@@ -104,6 +106,7 @@ export const branches = [
         name: 'Addis Abeba',
         tagline: 'Urban elegance in the capital',
         heroImage: addisAbebaHero,
+        images: [addisAbebaHero, '/src/assets/adiss ababa/10002.jpg', '/src/assets/adiss ababa/10005.jpg'],
         description: 'Located in the vibrant center of Addis Abeba, this flagship branch combines world-class amenities, panoramic city views, and unparalleled hospitality.'
     },
     {
@@ -111,6 +114,7 @@ export const branches = [
         name: 'Meki',
         tagline: 'A peaceful lakeside retreat',
         heroImage: mekiHero,
+        images: [mekiHero, '/src/assets/adama/10012.jpg', '/src/assets/adama/10015.jpg'],
         description: 'A tranquil getaway nestled near Lake Ziway, offering the perfect blend of natural beauty and premium resort facilities for a refreshing escape.'
     }
 ];
