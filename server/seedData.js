@@ -98,8 +98,8 @@ const seedDatabase = async () => {
         pricePerNight: 3200,
         amenities: ["Free Wifi", "Free Breakfast", "Air Conditioning", "Room Service"],
         images: [
-          "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop",
+          "/src/assets/arbaminch/10002.jpg",
+          "/src/assets/adama/10003.jpg",
         ],
       },
       {
@@ -109,8 +109,8 @@ const seedDatabase = async () => {
         pricePerNight: 1800,
         amenities: ["Free Wifi", "Air Conditioning", "Housekeeping"],
         images: [
-          "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?w=800&h=600&fit=crop",
+          "/src/assets/arbaminch/10011.jpg",
+          "/src/assets/adama/10013.jpg",
         ],
       },
       {
@@ -120,8 +120,8 @@ const seedDatabase = async () => {
         pricePerNight: 5500,
         amenities: ["Free Wifi", "Free Breakfast", "Room Service", "Parking", "Air Conditioning"],
         images: [
-          "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
+          "/src/assets/arbaminch/10014.jpg",
+          "/src/assets/adama/10018.jpg",
         ],
       },
       {
@@ -131,8 +131,8 @@ const seedDatabase = async () => {
         pricePerNight: 8500,
         amenities: ["Free Wifi", "Free Breakfast", "Room Service", "Mountain View", "Parking", "Air Conditioning"],
         images: [
-          "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?w=800&h=600&fit=crop",
+          "/src/assets/arbaminch/10004.jpg",
+          "/src/assets/adama/10007.jpg",
         ],
       },
       {
@@ -142,8 +142,8 @@ const seedDatabase = async () => {
         pricePerNight: 1200,
         amenities: ["Free Wifi", "Housekeeping", "Air Conditioning"],
         images: [
-          "https://images.unsplash.com/photo-1595576508898-0ad5c879a061?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&h=600&fit=crop",
+          "/src/assets/arbaminch/10008.jpg",
+          "/src/assets/adama/10012.jpg",
         ],
       },
     ];
@@ -167,7 +167,7 @@ const seedDatabase = async () => {
         category: "Breakfast",
         price: 450,
         features: ["Organic Coffee", "Fresh Injera", "Seasonal Fruits", "Vegan Options"],
-        image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=600&fit=crop",
+        image: "/src/assets/adama/10008.jpg",
       },
       {
         title: "Signature Spa Treatment",
@@ -175,7 +175,7 @@ const seedDatabase = async () => {
         category: "Spa",
         price: 2800,
         features: ["Hot Stone Massage", "Aromatherapy", "Facial Treatment", "Herbal Tea"],
-        image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&fit=crop",
+        image: "/src/assets/arbaminch/10006.jpg",
       },
       {
         title: "Gourmet Dinner Experience",
@@ -183,7 +183,7 @@ const seedDatabase = async () => {
         category: "Dining",
         price: 3500,
         features: ["Five Courses", "Wine Pairing", "Live Music", "Private Table"],
-        image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop",
+        image: "/src/assets/adama/10009.jpg",
       },
       {
         title: "Fitness & Wellness Package",
@@ -191,7 +191,7 @@ const seedDatabase = async () => {
         category: "Fitness",
         price: 1200,
         features: ["Gym Access", "Yoga Classes", "Pool Access", "Smoothie Bar"],
-        image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=600&fit=crop",
+        image: "/src/assets/arbaminch/10015.jpg",
       },
       {
         title: "Sunset Cocktail Lounge",
@@ -199,7 +199,7 @@ const seedDatabase = async () => {
         category: "Bar",
         price: 800,
         features: ["Craft Cocktails", "Appetizers", "Rooftop Views", "Live DJ"],
-        image: "https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=600&fit=crop",
+        image: "/src/assets/adama/10006.jpg",
       },
       {
         title: "Cultural City Tour",
@@ -207,7 +207,7 @@ const seedDatabase = async () => {
         category: "Tour",
         price: 2000,
         features: ["Local Guide", "Transport Included", "Market Visit", "Photo Stops"],
-        image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&h=600&fit=crop",
+        image: "/src/assets/arbaminch/10012.jpg",
       },
       {
         title: "Afternoon Tea & Pastries",
@@ -215,7 +215,7 @@ const seedDatabase = async () => {
         category: "Dining",
         price: 650,
         features: ["Premium Teas", "Fresh Pastries", "Finger Sandwiches", "Garden Seating"],
-        image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&h=600&fit=crop",
+        image: "/src/assets/adama/10015.jpg",
       },
     ];
 
