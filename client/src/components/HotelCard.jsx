@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { useAppContext } from '../context/AppContext'
+import { resolveImageUrl } from '../utils/resolveImage'
 
 // Color palette for card accents per index (badges & bottom line only)
 const cardAccents = [
@@ -25,7 +26,7 @@ const HotelCard = ({ room, index }) => {
             {/* Image with zoom effect */}
             <div className="relative overflow-hidden h-52">
                 <img
-                    src={room.images[0]}
+                    src={resolveImageUrl(room.images[0])}
                     alt={room.hotel.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

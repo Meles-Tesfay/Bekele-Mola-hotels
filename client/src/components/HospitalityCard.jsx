@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { assets } from '../assets/assets'
 import { useAppContext } from '../context/AppContext'
+import { resolveImageUrl } from '../utils/resolveImage'
 
 const cardAccents = [
     { badge: 'from-amber-400 to-orange-500' },
@@ -22,7 +23,7 @@ const HospitalityCard = ({ item, index = 0 }) => {
         >
             <div className="relative overflow-hidden h-52">
                 <img
-                    src={item.image}
+                    src={resolveImageUrl(item.image)}
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
