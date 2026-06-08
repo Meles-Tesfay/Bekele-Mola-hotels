@@ -4,6 +4,7 @@ import { assets, facilityIcons, roomCommonData } from '../assets/assets'
 import StarRating from '../components/StarRating'
 import { useAppContext } from '../context/AppContext'
 import toast from 'react-hot-toast'
+import { resolveImageUrl } from '../utils/resolveImage'
 
 const RoomDetail = () => {
     const { id } = useParams()
@@ -146,7 +147,7 @@ const RoomDetail = () => {
             <div className='flex flex-col lg:flex-row gap-4 h-auto lg:h-[500px] mb-12'>
                 <div className='lg:w-2/3 w-full h-[300px] lg:h-full group rounded-3xl overflow-hidden relative shadow-[0_8px_30px_rgb(0,0,0,0.04)]'>
                     <img
-                        src={mainImage}
+                        src={resolveImageUrl(mainImage)}
                         alt="room image"
                         className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-105'
                     />
@@ -157,7 +158,7 @@ const RoomDetail = () => {
                     {room?.images?.filter(img => img !== mainImage).slice(0, 2).map((image, index) => (
                         <div key={index} className='w-full h-full rounded-3xl overflow-hidden relative group cursor-pointer shadow-[0_8px_30px_rgb(0,0,0,0.04)]' onClick={() => setMainImage(image)}>
                             <img
-                                src={image}
+                                src={resolveImageUrl(image)}
                                 alt="room image"
                                 className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
                             />

@@ -5,6 +5,7 @@ import StarRating from '../components/StarRating'
 import toast from 'react-hot-toast'
 import { useAppContext } from '../context/AppContext'
 import { ALL_CATEGORIES } from '../constants/hospitalityOptions'
+import { resolveImageUrl } from '../utils/resolveImage'
 
 const CheckBox = ({ label, selected = false, onChange = () => { } }) => {
     return (
@@ -196,7 +197,7 @@ const Hospitality = () => {
                             {/* Image container */}
                             <div className="relative md:w-2/5 overflow-hidden rounded-2xl cursor-pointer bg-gray-100 flex-shrink-0">
                                 <img 
-                                    src={dining.image || assets.regImage} 
+                                    src={resolveImageUrl(dining.image) || assets.regImage} 
                                     alt="restaurant" 
                                     onError={(e) => { e.target.onerror = null; e.target.src = assets.regImage; }}
                                     className="w-full h-64 md:h-full object-cover group-hover/card:scale-110 transition-transform duration-700 ease-out" 

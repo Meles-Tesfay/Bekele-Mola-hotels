@@ -3,6 +3,7 @@ import { assets, facilityIcons } from '../assets/assets'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import StarRating from '../components/StarRating'
 import { useAppContext } from '../context/AppContext'
+import { resolveImageUrl } from '../utils/resolveImage'
 
 const CheckBox = ({ label, selected = false, onChange = () => { } }) => {
     return (
@@ -171,7 +172,7 @@ const AllRooms = () => {
                         <div key={room._id} className='group/card flex flex-col md:flex-row bg-white rounded-3xl p-4 gap-6 border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-500'>
                             {/* Image container */}
                             <div className="relative md:w-2/5 overflow-hidden rounded-2xl cursor-pointer" onClick={() => { navigate(`/rooms/${room._id}`); scrollTo(0, 0) }}>
-                                <img src={room.images[0]} alt="hotel" className="w-full h-64 md:h-full object-cover group-hover/card:scale-110 transition-transform duration-700 ease-out" />
+                                <img src={resolveImageUrl(room.images[0])} alt="hotel" className="w-full h-64 md:h-full object-cover group-hover/card:scale-110 transition-transform duration-700 ease-out" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
                             </div>
                             

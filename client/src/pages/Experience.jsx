@@ -1,4 +1,5 @@
 import React from 'react';
+import { resolveImageUrl } from '../utils/resolveImage';
 
 const experiences = [
     {
@@ -83,7 +84,7 @@ const Experience = () => {
                         {/* Image Section */}
                         <div className="relative h-64 overflow-hidden shrink-0">
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                            <img src={exp.image} alt={exp.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                            <img src={resolveImageUrl(exp.image)} alt={exp.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                             
                             {/* Animated Glowing Overlay */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500 z-10"></div>

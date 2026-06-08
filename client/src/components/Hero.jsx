@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { assets, cities } from '../assets/assets'
 import { useAppContext } from '../context/AppContext'
+import { resolveImageUrl } from '../utils/resolveImage'
 
 const Hero = () => {
 
@@ -22,7 +23,8 @@ const Hero = () => {
 
     return (
         <div className='flex flex-col items-start justify-center px-6 md:px-16 lg:px-24
-         xl:px-32 pt-32 pb-10 text-white bg-[url("/src/assets/adama/10001.jpg")] bg-no-repeat bg-cover bg-center min-h-screen relative overflow-hidden'>
+         xl:px-32 pt-32 pb-10 text-white bg-no-repeat bg-cover bg-center min-h-screen relative overflow-hidden'
+         style={{ backgroundImage: `url(${resolveImageUrl('/src/assets/adama/10001.jpg')})` }}>
             {/* Gradient overlay for text readability while keeping the image vibrant on the right */}
             <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent pointer-events-none"></div>
             

@@ -4,6 +4,7 @@ import Title from '../components/Title'
 import { assets } from '../assets/assets'
 import { useAppContext } from '../context/AppContext'
 import toast from 'react-hot-toast'
+import { resolveImageUrl } from '../utils/resolveImage'
 
 const MyBookings = () => {
     const { axios, user, currency, authLoading } = useAppContext()
@@ -110,7 +111,7 @@ const MyBookings = () => {
                             >
                                 <div className='flex flex-col md:flex-row'>
                                     <img
-                                        src={booking.room?.images?.[0]}
+                                        src={resolveImageUrl(booking.room?.images?.[0])}
                                         alt="room"
                                         className='md:w-44 rounded shadow object-cover'
                                     />
@@ -174,7 +175,7 @@ const MyBookings = () => {
                             >
                                 <div className='flex flex-col md:flex-row'>
                                     <img
-                                        src={order.hospitality?.image}
+                                        src={resolveImageUrl(order.hospitality?.image)}
                                         alt={order.hospitality?.title}
                                         className='md:w-44 h-36 md:h-auto rounded shadow object-cover'
                                     />

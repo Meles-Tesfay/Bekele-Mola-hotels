@@ -4,6 +4,7 @@ import { useAppContext } from '../context/AppContext';
 import HotelCard from '../components/HotelCard';
 import HospitalityCard from '../components/HospitalityCard';
 import { branches, facilityIcons } from '../assets/assets';
+import { resolveImageUrl } from '../utils/resolveImage';
 
 const BranchPage = () => {
     const { slug } = useParams();
@@ -119,7 +120,7 @@ const BranchPage = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                             {localBranchInfo.images.map((img, idx) => (
                                 <div key={idx} className="h-48 md:h-64 rounded-2xl overflow-hidden shadow-md group">
-                                    <img src={img} alt={`${localBranchInfo.name} gallery ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                                    <img src={resolveImageUrl(img)} alt={`${localBranchInfo.name} gallery ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                                 </div>
                             ))}
                         </div>
