@@ -34,7 +34,7 @@ import listIcon from "./listIcon.svg";
 import uploadArea from "./uploadArea.svg";
 import totalBookingIcon from "./totalBookingIcon.svg";
 import totalRevenueIcon from "./totalRevenueIcon.svg";
-import arbaminch from "./arbaminch/arba minch.jfif";
+import arbaminch from "./arbaminch/Arba Minch.jfif";
 import adisababa from "./adiss ababa/Addis Ababa.jfif";
 import bale from "./Bale Mountains.jfif";
 import adama from "./adama/10019.jpg";
