@@ -34,7 +34,10 @@ import listIcon from "./listIcon.svg";
 import uploadArea from "./uploadArea.svg";
 import totalBookingIcon from "./totalBookingIcon.svg";
 import totalRevenueIcon from "./totalRevenueIcon.svg";
-
+import arbaminch from "./arbaminch/arba minch.jfif";
+import adisababa from "./adiss ababa/Addis Ababa.jfif";
+import bale from "./Bale Mountains.jfif";
+import adama from "./adama/10019.jpg";
 
 export const assets = {
     logo,
@@ -78,11 +81,11 @@ export const cities = [
     "Meki",
 ];
 
-import adamaHero from './adama/10001.jpg';
-import arbaminchHero from './arbaminch/10001.jpg';
-import addisAbebaHero from './adiss ababa/10001.jpg';
-// Meki doesn't have its own photos, so using one from Adama
-import mekiHero from './adama/10002.jpg';
+// High-quality hero images from Unsplash
+const adamaHero = adama;
+const arbaminchHero = arbaminch;
+const addisAbebaHero = adisababa;
+const mekiHero = bale;
 
 export const branches = [
     {
@@ -90,7 +93,7 @@ export const branches = [
         name: 'Adama',
         tagline: 'Experience the warm breeze of Adama',
         heroImage: adamaHero,
-        images: [adamaHero, '/src/assets/adama/10003.jpg', '/src/assets/adama/10006.jpg'],
+        images: [adamaHero, '/src/assets/adama/10015.jpg', '/src/assets/adama/10006.jpg'],
         description: 'A modern luxury hotel in the heart of Adama, featuring exquisite dining, a relaxing pool, and spacious rooms tailored for both business and leisure travelers.'
     },
     {
@@ -114,7 +117,7 @@ export const branches = [
         name: 'Meki',
         tagline: 'A peaceful lakeside retreat',
         heroImage: mekiHero,
-        images: [mekiHero, '/src/assets/adama/10012.jpg', '/src/assets/adama/10015.jpg'],
+        images: [mekiHero, '/src/assets/adama/10010.jpg', '/src/assets/adama/10015.jpg'],
         description: 'A tranquil getaway nestled near Lake Ziway, offering the perfect blend of natural beauty and premium resort facilities for a refreshing escape.'
     }
 ];
