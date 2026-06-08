@@ -37,7 +37,21 @@ import totalRevenueIcon from "./totalRevenueIcon.svg";
 import arbaminch from "./arbaminch/Arba Minch.jfif";
 import adisababa from "./adiss ababa/Addis Ababa.jfif";
 import bale from "./Bale Mountains.jfif";
-import adama from "./adama/10019.jpg";
+import adama from "./adama/10018.jpg";
+import bedroom1 from './bedrooms/Buren Sheesham Wood Single Bed In Honey Oak Finish.jfif';
+import bedroom2 from './bedrooms/Eigentumswohnung · Malabo · ★4,95 · 2 Schlafzimmer · 2 Betten · 1 privates Badezimmer.jfif';
+import bedroom3 from './bedrooms/Luxurious home away from home shanzu.jfif';
+import bedroom4 from './bedrooms/Sheesham wooden bed hav unique look & treadtional….jfif';
+import bedroom5 from './bedrooms/አልጋ.jfif';
+
+export const bedroomImages = [bedroom1, bedroom2, bedroom3, bedroom4, bedroom5];
+
+export const getRoomDisplayImage = (index, fallback) => {
+    if (index >= 0 && index < bedroomImages.length) {
+        return bedroomImages[index];
+    }
+    return fallback;
+};
 
 export const assets = {
     logo,
@@ -101,7 +115,7 @@ export const branches = [
         name: 'Arbaminch',
         tagline: 'Nature meets luxury in Arbaminch',
         heroImage: arbaminchHero,
-        images: [arbaminchHero, '/src/assets/arbaminch/10002.jpg', '/src/assets/arbaminch/10008.jpg'],
+        images: [arbaminchHero, '/src/assets/arbaminch/10002.jpg', '/src/assets/arbaminch/10011.jpg'],
         description: 'Overlooking the majestic lakes Abaya and Chamo, our Arbaminch branch offers a serene gateway to explore the natural wonders of the South while enjoying top-tier comfort.'
     },
     {

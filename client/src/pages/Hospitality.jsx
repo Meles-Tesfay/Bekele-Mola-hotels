@@ -37,8 +37,12 @@ const Hospitality = () => {
 
     const handleOrder = async (item) => {
         if (!user || user.role !== 'user') {
-            toast.error('Please sign in as a customer to place an order')
-            navigate('/login', { state: { from: '/hospitality' } })
+            navigate('/login', {
+                state: {
+                    from: '/hospitality',
+                    message: 'Please sign in as a customer to place an order',
+                },
+            })
             return
         }
         try {
