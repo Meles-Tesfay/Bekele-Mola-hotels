@@ -237,8 +237,8 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-16 lg:px-24 xl:px-32 pt-5 md:pt-6">
             <div className={`flex items-center justify-between w-full transition-all duration-500 rounded-[3.5rem] px-5 md:px-8 lg:px-10 ${theme.bg}`}>
 
-                <Link to='/' className="group flex items-center gap-2">
-                    <span className={`font-playfair text-xl md:text-2xl font-bold tracking-tight transition-all duration-500 group-hover:scale-105 ${theme.logoInvert ? "text-gray-900" : "text-white"}`}>
+                <Link to='/' className="group flex items-center gap-2 shrink-0">
+                    <span className={`font-playfair text-xl md:text-2xl font-bold tracking-tight whitespace-nowrap transition-all duration-500 group-hover:scale-105 ${theme.logoInvert ? "text-gray-900" : "text-white"}`}>
                         Bekele Mola Hotels
                     </span>
                 </Link>

@@ -194,8 +194,13 @@ const Hospitality = () => {
                     {filteredDining.map((dining) => (
                         <div key={dining._id} className='group/card flex flex-col md:flex-row bg-white rounded-3xl p-4 gap-6 border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-500'>
                             {/* Image container */}
-                            <div className="relative md:w-2/5 overflow-hidden rounded-2xl cursor-pointer">
-                                <img src={dining.image} alt="restaurant" className="w-full h-64 md:h-full object-cover group-hover/card:scale-110 transition-transform duration-700 ease-out" />
+                            <div className="relative md:w-2/5 overflow-hidden rounded-2xl cursor-pointer bg-gray-100 flex-shrink-0">
+                                <img 
+                                    src={dining.image || assets.regImage} 
+                                    alt="restaurant" 
+                                    onError={(e) => { e.target.onerror = null; e.target.src = assets.regImage; }}
+                                    className="w-full h-64 md:h-full object-cover group-hover/card:scale-110 transition-transform duration-700 ease-out" 
+                                />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-500"></div>
                             </div>
                             
