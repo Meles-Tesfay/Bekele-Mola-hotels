@@ -30,7 +30,10 @@ const BranchPage = () => {
                 const { data } = await axios.get(`/api/branches/${localBranchInfo.name}`);
                 if (data.success) {
                     setBranchData(data.branch);
-                    setRooms(data.rooms);
+                    const bedRooms = data.rooms.filter(room => 
+                        room.roomType && room.roomType.toLowerCase().includes('bed')
+                    );
+                    setRooms(bedRooms);
                     setHospitalities(data.hospitalities);
                 }
             } catch (error) {
