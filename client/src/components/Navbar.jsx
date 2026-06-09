@@ -237,10 +237,12 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-16 lg:px-24 xl:px-32 pt-5 md:pt-6">
             <div className={`flex items-center justify-between w-full transition-all duration-500 rounded-[3.5rem] px-5 md:px-8 lg:px-10 ${theme.bg}`}>
 
-                <Link to='/' className="group flex items-center gap-2 shrink-0">
-                    <span className={`font-playfair text-xl md:text-2xl font-bold tracking-tight whitespace-nowrap transition-all duration-500 group-hover:scale-105 ${theme.logoInvert ? "text-gray-900" : "text-white"}`}>
-                        Bekele Mola Hotels
-                    </span>
+                <Link to='/' className="group flex items-center shrink-0">
+                    <img
+                        src={assets.logo}
+                        alt="Bekele Mola Hotels"
+                        className="h-12 md:h-16 w-auto min-w-[160px] md:min-w-[220px] max-w-[260px] md:max-w-[320px] object-contain object-left transition-transform duration-500 group-hover:scale-105 drop-shadow-sm"
+                    />
                 </Link>
 
                 <div className="hidden md:flex items-center gap-1 lg:gap-2">
@@ -359,7 +361,11 @@ const Navbar = () => {
             <div className={`fixed top-0 left-0 w-full h-screen bg-white flex flex-col md:hidden transition-all duration-500 ease-in-out ${isMenuOpen ? "translate-x-0 opacity-100" : "-translate-x-full opacity-0"}`}>
                 <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
                     <Link to="/" onClick={() => setIsMenuOpen(false)} className="flex items-center">
-                        <span className="font-playfair text-xl font-bold text-gray-900">Bekele Mola Hotels</span>
+                        <img
+                            src={assets.logo}
+                            alt="Bekele Mola Hotels"
+                            className="h-12 w-auto min-w-[180px] max-w-[260px] object-contain object-left drop-shadow-sm"
+                        />
                     </Link>
                     <button onClick={() => setIsMenuOpen(false)} className="p-2 rounded-xl hover:bg-gray-100">
                         <img src={assets.closeIcon} alt="close" className="h-5 w-5" />

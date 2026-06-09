@@ -47,8 +47,7 @@ const Login = () => {
             <div className="w-full max-w-md bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-10">
                 <div className="text-center mb-8">
                     <div className="flex items-center justify-center gap-2 mb-4">
-                        <img src={assets.logo} alt="logo" className="h-10 invert opacity-80" />
-                        <span className="text-2xl font-bold text-gray-900 font-playfair">Bekele Mola</span>
+                        <img src={assets.logo} alt="Bekele Mola Hotels" className="h-14 md:h-16 w-auto min-w-[200px] max-w-[280px] object-contain drop-shadow-sm" />
                     </div>
                     {showAuthMessage && authMessage && (
                         <p className="text-red-600 text-sm font-semibold mb-4">{authMessage}</p>
