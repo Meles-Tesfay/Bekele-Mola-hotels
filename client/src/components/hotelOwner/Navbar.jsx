@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className='flex items-center justify-between px-4 md:px-8 border-b border-gray-300 py-3 bg-white'>
             <Link to='/owner'>
-                <img src={assets.logo} alt="logo" className='h-9 invert opacity-80' />
+                <img src={assets.logo} alt="Bekele Mola Hotels" className="h-9 w-auto max-w-[180px] object-contain" />
             </Link>
 
             <div className="flex items-center gap-4">

@@ -27,7 +27,13 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500/30 pb-6">
 
                     <div className="md:max-w-96 ">
-                        <span className="font-playfair text-2xl font-bold text-gray-900 mb-4 inline-block">Bekele Mola Hotels</span>
+                        <Link to="/" onClick={scrollTop} className="inline-block mb-4">
+                            <img
+                                src={assets.logo}
+                                alt="Bekele Mola Hotels"
+                                className="h-14 md:h-[4.5rem] w-auto min-w-[200px] max-w-[320px] object-contain object-left drop-shadow-sm"
+                            />
+                        </Link>
                         <p className="mt-6 text-sm">
                             Book your perfect stay with us. We offer seamless hotel reservations, trusted listings, and the best prices to make your travel experience smooth, comfortable, and memorable.
                         </p>

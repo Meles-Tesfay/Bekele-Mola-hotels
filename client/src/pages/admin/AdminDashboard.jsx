@@ -63,7 +63,7 @@ const AdminDashboard = () => {
         <div className="min-h-screen bg-gray-50">
             <header className="bg-white border-b px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                    <img src={assets.logo} alt="logo" className="h-8 invert opacity-80" />
+                    <img src={assets.logo} alt="Bekele Mola Hotels" className="h-8 w-auto max-w-[160px] object-contain" />
                     <h1 className="text-xl font-bold text-gray-900">Admin Panel</h1>
                 </div>
                 <div className="flex items-center gap-4">

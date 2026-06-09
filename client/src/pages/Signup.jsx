@@ -49,7 +49,7 @@ const Signup = () => {
         <div className="min-h-screen flex items-center justify-center px-4 py-28 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
             <div className="w-full max-w-lg bg-white rounded-3xl shadow-xl border border-gray-100 p-8 md:p-10 max-h-[90vh] overflow-y-auto">
                 <div className="text-center mb-6">
-                    <img src={assets.logo} alt="logo" className="h-12 mx-auto invert opacity-80 mb-4" />
+                    <img src={assets.logo} alt="Bekele Mola Hotels" className="h-14 md:h-16 w-auto min-w-[200px] max-w-[280px] mx-auto object-contain drop-shadow-sm mb-4" />
                     <h1 className="text-2xl font-bold text-gray-900 font-playfair">Create account</h1>
                     <p className="text-gray-500 text-sm mt-1">Choose how you want to use Bekele Mola Hotels</p>
                 </div>

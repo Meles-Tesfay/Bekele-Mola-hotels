@@ -65,7 +65,7 @@ const PendingApproval = () => {
     return (
         <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
             <div className="flex items-center justify-between px-6 py-4 bg-white border-b">
-                <img src={assets.logo} alt="logo" className="h-9 invert opacity-80" />
+                <img src={assets.logo} alt="Bekele Mola Hotels" className="h-9 w-auto max-w-[180px] object-contain" />
                 <div className="flex items-center gap-4">
                     <span className="text-sm text-gray-600">{user?.email}</span>
                     <button onClick={logout} className="text-sm text-red-600 font-medium">Logout</button>
