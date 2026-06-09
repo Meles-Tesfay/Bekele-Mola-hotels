@@ -37,7 +37,7 @@ import totalRevenueIcon from "./totalRevenueIcon.svg";
 import arbaminch from "./arbaminch/Arba Minch.jfif";
 import adisababa from "./adiss ababa/Addis Ababa.jfif";
 import bale from "./Bale Mountains.jfif";
-import adama from "./adama/10016.jpg";
+import adama from "./adama/10018.jpg";
 import bedroom1 from "./bedrooms/Buren Sheesham Wood Single Bed In Honey Oak Finish.jfif";
 import bedroom2 from "./bedrooms/Eigentumswohnung · Malabo · ★4,95 · 2 Schlafzimmer · 2 Betten · 1 privates Badezimmer.jfif";
 import bedroom3 from "./bedrooms/Luxurious home away from home shanzu.jfif";
@@ -104,8 +104,8 @@ export const branches = [
     heroImage: adamaHero,
     images: [
       adamaHero,
-      "/src/assets/adama/10016.jpg",
-      "/src/assets/adama/10016.jpg",
+      "/src/assets/adama/10015.jpg",
+      "/src/assets/adama/10006.jpg",
     ],
     description:
       "A modern luxury hotel in the heart of Adama, featuring exquisite dining, a relaxing pool, and spacious rooms tailored for both business and leisure travelers.",
@@ -143,8 +143,8 @@ export const branches = [
     heroImage: mekiHero,
     images: [
       mekiHero,
-      "/src/assets/adama/10016.jpg",
-      "/src/assets/adama/10016.jpg",
+      "/src/assets/adama/10010.jpg",
+      "/src/assets/adama/10015.jpg",
     ],
     description:
       "A tranquil getaway nestled near Lake Ziway, offering the perfect blend of natural beauty and premium resort facilities for a refreshing escape.",

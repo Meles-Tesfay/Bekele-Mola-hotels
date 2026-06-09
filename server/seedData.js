@@ -18,7 +18,7 @@ const seedDatabase = async () => {
     if (!existingUser) {
       const hashedPw = await bcrypt.hash("SeedPass123!", 10);
       await User.create({
-        _id: dummyOwnerId,
+        _id: dummyOwnerId,   
         email: "seedowner@hotel.com",
         password: hashedPw,
         username: "Luxury Hotels Group",
