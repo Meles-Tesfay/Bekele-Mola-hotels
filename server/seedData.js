@@ -104,7 +104,7 @@ const seedDatabase = async () => {
       },
       {
         title: "Premium Single Room",
-        description: "Cozy and modern single room with all essentials, a plush queen bed, and a sleek en-suite bathroom.",
+        description: "A simple, comfortable room with everything you need for a good night's sleep. Includes a nice queen bed and a clean, modern bathroom.",
         roomType: "Single Bed",
         pricePerNight: 1800,
         amenities: ["Free Wifi", "Air Conditioning", "Housekeeping"],
@@ -115,7 +115,7 @@ const seedDatabase = async () => {
       },
       {
         title: "Family Suite",
-        description: "Generously sized family suite with separate living area, two bathrooms, kids play corner, and complimentary breakfast for the whole family.",
+        description: "Plenty of room for the whole family to stretch out. Comes with a separate living space, two bathrooms, and we'll even cover breakfast for everyone.",
         roomType: "Family Suite",
         pricePerNight: 5500,
         amenities: ["Free Wifi", "Free Breakfast", "Room Service", "Parking", "Air Conditioning"],
@@ -126,7 +126,7 @@ const seedDatabase = async () => {
       },
       {
         title: "Ocean View Penthouse",
-        description: "Top-floor penthouse with floor-to-ceiling windows, a private terrace, jacuzzi, and 360-degree panoramic views.",
+        description: "The best room we have. Huge windows, your own private terrace, and amazing views from the top floor.",
         roomType: "Luxury Room",
         pricePerNight: 8500,
         amenities: ["Free Wifi", "Free Breakfast", "Room Service", "Mountain View", "Parking", "Air Conditioning"],
@@ -137,7 +137,7 @@ const seedDatabase = async () => {
       },
       {
         title: "Standard Comfort Room",
-        description: "Clean, comfortable, and affordable room with essential amenities. A great choice for budget-conscious travelers.",
+        description: "A great value option if you just need a clean, comfortable place to crash for the night without breaking the bank.",
         roomType: "Single Bed",
         pricePerNight: 1200,
         amenities: ["Free Wifi", "Housekeeping", "Air Conditioning"],

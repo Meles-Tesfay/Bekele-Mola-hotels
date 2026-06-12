@@ -195,7 +195,8 @@ const BranchPage = () => {
                                     <div
                                         key={idx}
                                         onClick={() => setLightboxIdx(idx)}
-                                        className={`${spanClass} relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer ring-1 ring-black/5`}
+                                        className={`${spanClass} relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer ring-1 ring-black/5 animate-fade-in-up opacity-0`}
+                                        style={{ animationDelay: `${idx * 150}ms` }}
                                     >
                                         <img
                                             src={resolveImageUrl(img)}

@@ -203,7 +203,8 @@ const AllRooms = () => {
           {filteredRooms.map((room, index) => (
             <div
               key={room._id}
-              className="group/card flex flex-col md:flex-row bg-white rounded-3xl p-4 gap-6 border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-500"
+              className="group/card flex flex-col md:flex-row bg-white rounded-3xl p-4 gap-6 border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-500 animate-fade-in-up opacity-0"
+              style={{ animationDelay: `${index * 150}ms` }}
             >
               {/* Image container */}
               <div

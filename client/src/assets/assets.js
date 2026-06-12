@@ -109,7 +109,7 @@ export const branches = [
   {
     slug: "adama",
     name: "Adama",
-    tagline: "Experience the warm breeze of Adama",
+    tagline: "Your comfortable stop in Adama",
     heroImage: adamaHero,
     images: [
       adamaHero,
@@ -117,12 +117,12 @@ export const branches = [
       adamaGallery2,
     ],
     description:
-      "A modern luxury hotel in the heart of Adama, featuring exquisite dining, a relaxing pool, and spacious rooms tailored for both business and leisure travelers.",
+      "Whether you're stopping by for a quick meeting or staying the weekend, our Adama branch offers a great place to relax. Enjoy our pool and grab a bite at the restaurant.",
   },
   {
     slug: "arbaminch",
     name: "Arbaminch",
-    tagline: "Nature meets luxury in Arbaminch",
+    tagline: "Stay right next to the lakes",
     heroImage: arbaminchHero,
     images: [
       arbaminchHero,
@@ -130,12 +130,12 @@ export const branches = [
       arbaminchGallery2,
     ],
     description:
-      "Overlooking the majestic lakes Abaya and Chamo, our Arbaminch branch offers a serene gateway to explore the natural wonders of the South while enjoying top-tier comfort.",
+      "A peaceful spot with amazing views of Lake Abaya and Lake Chamo. It's the perfect base if you're planning to explore the outdoors in the South.",
   },
   {
     slug: "addis-abeba",
     name: "Addis Abeba",
-    tagline: "Urban elegance in the capital",
+    tagline: "Right in the middle of the city",
     heroImage: addisAbebaHero,
     images: [
       addisAbebaHero,
@@ -143,12 +143,12 @@ export const branches = [
       addisGallery3,
     ],
     description:
-      "Located in the vibrant center of Addis Abeba, this flagship branch combines world-class amenities, panoramic city views, and unparalleled hospitality.",
+      "Our main branch puts you right where the action is. Great for business trips or just exploring Addis, with everything you need right downstairs.",
   },
   {
     slug: "meki",
     name: "Meki",
-    tagline: "A peaceful lakeside retreat",
+    tagline: "Quiet weekends by Lake Ziway",
     heroImage: mekiHero,
     images: [
       mekiHero,
@@ -156,7 +156,7 @@ export const branches = [
       "/src/assets/adama/10015.jpg",
     ],
     description:
-      "A tranquil getaway nestled near Lake Ziway, offering the perfect blend of natural beauty and premium resort facilities for a refreshing escape.",
+      "A laid-back spot close to Lake Ziway. Just come, grab a cool drink, and take a break from the busy city life.",
   },
 ];
 
