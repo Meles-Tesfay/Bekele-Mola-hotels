@@ -131,7 +131,7 @@ export const branches = [
     images: [
       addisAbebaHero,
       "/src/assets/adiss ababa/10002.jpg",
-      "/src/assets/adiss ababa/10005.jpg",
+      "/src/assets/adiss ababa/10003.jpg",
     ],
     description:
       "Located in the vibrant center of Addis Abeba, this flagship branch combines world-class amenities, panoramic city views, and unparalleled hospitality.",

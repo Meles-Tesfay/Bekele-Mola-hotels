@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAppContext } from '../context/AppContext';
 import HotelCard from '../components/HotelCard';
@@ -11,12 +11,34 @@ const BranchPage = () => {
     const navigate = useNavigate();
     const { axios } = useAppContext();
     
+    const localBranchInfo = branches.find(b => b.slug === slug);
+
     const [branchData, setBranchData] = useState(null);
     const [rooms, setRooms] = useState([]);
     const [hospitalities, setHospitalities] = useState([]);
     const [loading, setLoading] = useState(true);
+    const [lightboxIdx, setLightboxIdx] = useState(-1);
 
-    const localBranchInfo = branches.find(b => b.slug === slug);
+    // Lightbox keyboard navigation
+    const handleLightboxKey = useCallback((e) => {
+        if (lightboxIdx < 0 || !localBranchInfo?.images) return;
+        if (e.key === 'Escape') setLightboxIdx(-1);
+        if (e.key === 'ArrowRight') setLightboxIdx(i => (i + 1) % localBranchInfo.images.length);
+        if (e.key === 'ArrowLeft') setLightboxIdx(i => (i - 1 + localBranchInfo.images.length) % localBranchInfo.images.length);
+    }, [lightboxIdx, localBranchInfo]);
+
+    useEffect(() => {
+        if (lightboxIdx >= 0) {
+            window.addEventListener('keydown', handleLightboxKey);
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+        return () => {
+            window.removeEventListener('keydown', handleLightboxKey);
+            document.body.style.overflow = '';
+        };
+    }, [lightboxIdx, handleLightboxKey]);
 
     useEffect(() => {
         if (!localBranchInfo) {
@@ -30,11 +52,8 @@ const BranchPage = () => {
                 const { data } = await axios.get(`/api/branches/${localBranchInfo.name}`);
                 if (data.success) {
                     setBranchData(data.branch);
-                    const bedRooms = data.rooms.filter(room => 
-                        room.roomType && room.roomType.toLowerCase().includes('bed')
-                    );
-                    setRooms(bedRooms);
-                    setHospitalities(data.hospitalities);
+                    setRooms(data.rooms || []);
+                    setHospitalities(data.hospitalities || []);
                 }
             } catch (error) {
                 console.error("Failed to fetch branch data", error);
@@ -119,13 +138,90 @@ const BranchPage = () => {
                 {/* Image Gallery */}
                 {localBranchInfo.images && localBranchInfo.images.length > 0 && (
                     <div className="mb-16">
-                        <h3 className="font-playfair text-2xl font-bold text-gray-900 mb-6">Gallery</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            {localBranchInfo.images.map((img, idx) => (
-                                <div key={idx} className="h-48 md:h-64 rounded-2xl overflow-hidden shadow-md group">
-                                    <img src={resolveImageUrl(img)} alt={`${localBranchInfo.name} gallery ${idx + 1}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                                </div>
-                            ))}
+                        <div className="flex items-center gap-4 mb-8">
+                            <h3 className="font-playfair text-3xl font-bold text-gray-900">Gallery</h3>
+                            <div className="h-px bg-gray-200 flex-1"></div>
+                            <span className="text-sm text-gray-400 font-medium">{localBranchInfo.images.length} Photos</span>
+                        </div>
+
+                        {/* Premium Masonry Grid */}
+                        <div className={`grid gap-4 ${
+                            localBranchInfo.images.length === 1 ? 'grid-cols-1' :
+                            localBranchInfo.images.length === 2 ? 'grid-cols-2' :
+                            'grid-cols-2 md:grid-cols-4'
+                        }`}>
+                            {localBranchInfo.images.map((img, idx) => {
+                                const isFirst = idx === 0;
+                                const spanClass = localBranchInfo.images.length >= 3 && isFirst
+                                    ? 'col-span-2 row-span-2 h-72 md:h-[420px]'
+                                    : 'h-48 md:h-[200px]';
+                                return (
+                                    <div
+                                        key={idx}
+                                        onClick={() => setLightboxIdx(idx)}
+                                        className={`${spanClass} relative rounded-2xl overflow-hidden shadow-lg group cursor-pointer ring-1 ring-black/5`}
+                                    >
+                                        <img
+                                            src={resolveImageUrl(img)}
+                                            alt={`${localBranchInfo.name} gallery ${idx + 1}`}
+                                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                        />
+                                        {/* Gradient overlay */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                        {/* Zoom icon */}
+                                        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
+                                            <div className="bg-white/20 backdrop-blur-md rounded-full p-3 shadow-xl border border-white/30 scale-75 group-hover:scale-100 transition-transform duration-500">
+                                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        {/* Image number badge */}
+                                        <div className="absolute bottom-3 left-3 bg-white/20 backdrop-blur-sm text-white text-xs font-bold px-2.5 py-1 rounded-full border border-white/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                            {idx + 1} / {localBranchInfo.images.length}
+                                        </div>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                )}
+
+                {/* Fullscreen Lightbox */}
+                {lightboxIdx >= 0 && localBranchInfo.images && (
+                    <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl flex items-center justify-center" onClick={() => setLightboxIdx(-1)}>
+                        {/* Close button */}
+                        <button onClick={() => setLightboxIdx(-1)} className="absolute top-6 right-6 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-2 transition-all duration-300 z-10">
+                            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                        {/* Prev */}
+                        {localBranchInfo.images.length > 1 && (
+                            <button onClick={(e) => { e.stopPropagation(); setLightboxIdx(i => (i - 1 + localBranchInfo.images.length) % localBranchInfo.images.length); }} className="absolute left-4 md:left-8 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-3 transition-all duration-300 z-10">
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                                </svg>
+                            </button>
+                        )}
+                        {/* Image */}
+                        <img
+                            src={resolveImageUrl(localBranchInfo.images[lightboxIdx])}
+                            alt={`${localBranchInfo.name} gallery ${lightboxIdx + 1}`}
+                            className="max-h-[85vh] max-w-[90vw] object-contain rounded-xl shadow-2xl"
+                            onClick={(e) => e.stopPropagation()}
+                        />
+                        {/* Next */}
+                        {localBranchInfo.images.length > 1 && (
+                            <button onClick={(e) => { e.stopPropagation(); setLightboxIdx(i => (i + 1) % localBranchInfo.images.length); }} className="absolute right-4 md:right-8 text-white/70 hover:text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-3 transition-all duration-300 z-10">
+                                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        )}
+                        {/* Counter */}
+                        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white/60 text-sm font-medium bg-white/10 backdrop-blur-sm px-4 py-1.5 rounded-full">
+                            {lightboxIdx + 1} / {localBranchInfo.images.length}
                         </div>
                     </div>
                 )}
