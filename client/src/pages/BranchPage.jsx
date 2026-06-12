@@ -135,10 +135,46 @@ const BranchPage = () => {
                     </div>
                 )}
 
-                {/* Image Gallery */}
+                {/* Rooms Section */}
+                <div id="rooms" className="mb-20 pt-10">
+                    <div className="flex items-center gap-4 mb-10">
+                        <h2 className="font-playfair text-4xl font-bold text-gray-900">Available Rooms</h2>
+                        <div className="h-px bg-gray-200 flex-1"></div>
+                    </div>
+                    
+                    {rooms.length > 0 ? (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                            {rooms.map((room, index) => (
+                                <HotelCard key={room._id} room={{...room, hotel: branchData}} index={index} />
+                            ))}
+                        </div>
+                    ) : (
+                        <p className="text-gray-500 italic">No rooms currently available at this branch.</p>
+                    )}
+                </div>
+
+                {/* Hospitality Section */}
+                <div id="hospitality" className="mb-10 pt-10">
+                    <div className="flex items-center gap-4 mb-10">
+                        <h2 className="font-playfair text-4xl font-bold text-gray-900">Dining & Services</h2>
+                        <div className="h-px bg-gray-200 flex-1"></div>
+                    </div>
+                    
+                    {hospitalities.length > 0 ? (
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                            {hospitalities.map((item) => (
+                                <HospitalityCard key={item._id} item={{...item, hotel: branchData}} />
+                            ))}
+                        </div>
+                    ) : (
+                        <p className="text-gray-500 italic">No hospitality services currently listed for this branch.</p>
+                    )}
+                </div>
+
+                {/* Gallery Section */}
                 {localBranchInfo.images && localBranchInfo.images.length > 0 && (
-                    <div className="mb-16">
-                        <div className="flex items-center gap-4 mb-8">
+                    <div className="mb-20 pt-10">
+                        <div className="flex items-center gap-4 mb-10">
                             <h3 className="font-playfair text-3xl font-bold text-gray-900">Gallery</h3>
                             <div className="h-px bg-gray-200 flex-1"></div>
                             <span className="text-sm text-gray-400 font-medium">{localBranchInfo.images.length} Photos</span>
@@ -225,43 +261,6 @@ const BranchPage = () => {
                         </div>
                     </div>
                 )}
-
-                {/* Rooms Section */}
-                <div id="rooms" className="mb-20 pt-10">
-                    <div className="flex items-center gap-4 mb-10">
-                        <h2 className="font-playfair text-4xl font-bold text-gray-900">Available Rooms</h2>
-                        <div className="h-px bg-gray-200 flex-1"></div>
-                    </div>
-                    
-                    {rooms.length > 0 ? (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                            {rooms.map((room, index) => (
-                                <HotelCard key={room._id} room={{...room, hotel: branchData}} index={index} />
-                            ))}
-                        </div>
-                    ) : (
-                        <p className="text-gray-500 italic">No rooms currently available at this branch.</p>
-                    )}
-                </div>
-
-                {/* Hospitality Section */}
-                <div id="hospitality" className="mb-10 pt-10">
-                    <div className="flex items-center gap-4 mb-10">
-                        <h2 className="font-playfair text-4xl font-bold text-gray-900">Dining & Services</h2>
-                        <div className="h-px bg-gray-200 flex-1"></div>
-                    </div>
-                    
-                    {hospitalities.length > 0 ? (
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                            {hospitalities.map((item) => (
-                                <HospitalityCard key={item._id} item={{...item, hotel: branchData}} />
-                            ))}
-                        </div>
-                    ) : (
-                        <p className="text-gray-500 italic">No hospitality services currently listed for this branch.</p>
-                    )}
-                </div>
-
             </div>
         </div>
     );
