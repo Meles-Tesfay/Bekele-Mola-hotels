@@ -12,7 +12,7 @@ const BookIcon = () => (
 const getNavbarTheme = (pathname, isScrolled) => {
     // Default theme for standard pages (Rooms, About, Hospitality, etc.) when scrolled or always
     const defaultScrolled = {
-        bg: "bg-[#F6F9FC]/95 text-gray-900 backdrop-blur-xl py-4 md:py-5 shadow-[0_40px_100px_rgba(0,0,0,0.25)] border border-gray-200",
+        bg: "bg-[#F6F9FC]/95 text-gray-900 backdrop-blur-xl py-2 md:py-3 shadow-[0_40px_100px_rgba(0,0,0,0.25)] border border-gray-200",
         text: "text-gray-900",
         linkText: "text-gray-900 font-medium hover:text-blue-600 hover:bg-gray-100",
         logoInvert: true,
@@ -21,7 +21,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
     };
 
     const defaultTop = {
-        bg: "bg-black/20 backdrop-blur-md border border-transparent shadow-[0_40px_100px_rgba(0,0,0,0.2)] py-5 md:py-6",
+        bg: "bg-black/20 backdrop-blur-md border border-transparent shadow-[0_40px_100px_rgba(0,0,0,0.2)] py-3 md:py-4",
         text: "text-white",
         linkText: "text-white font-medium hover:bg-white/20",
         logoInvert: false,
@@ -37,7 +37,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
     const themes = {
         '/careers': {
             top: {
-                bg: "bg-transparent border-transparent py-5 md:py-6",
+                bg: "bg-transparent border-transparent py-3 md:py-4",
                 text: "text-white",
                 linkText: "text-slate-300 hover:text-white hover:bg-white/10",
                 logoInvert: false,
@@ -45,7 +45,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
                 activeIndicator: "bg-[#49B9FF]"
             },
             scrolled: {
-                bg: "bg-[#0a1628]/95 backdrop-blur-xl border-slate-800 shadow-[0_40px_100px_rgba(0,0,0,0.35)] py-4 md:py-5",
+                bg: "bg-[#0a1628]/95 backdrop-blur-xl border-slate-800 shadow-[0_40px_100px_rgba(0,0,0,0.35)] py-2 md:py-3",
                 text: "text-white",
                 linkText: "text-slate-300 hover:text-white hover:bg-white/5",
                 logoInvert: false,
@@ -55,7 +55,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
         },
         '/press': {
             top: {
-                bg: "bg-transparent border-transparent py-7 md:py-8",
+                bg: "bg-transparent border-transparent py-4 md:py-5",
                 text: "text-gray-900",
                 linkText: "text-gray-600 hover:text-gray-900 hover:bg-gray-100",
                 logoInvert: true,
@@ -63,7 +63,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
                 activeIndicator: "bg-black"
             },
             scrolled: {
-                bg: "bg-[#faf8f5]/95 backdrop-blur-xl border-gray-300 shadow-[0_40px_100px_rgba(0,0,0,0.15)] py-4 md:py-5",
+                bg: "bg-[#faf8f5]/95 backdrop-blur-xl border-gray-300 shadow-[0_40px_100px_rgba(0,0,0,0.15)] py-2 md:py-3",
                 text: "text-gray-900",
                 linkText: "text-gray-600 hover:text-gray-900 hover:bg-gray-200",
                 logoInvert: true,
@@ -73,7 +73,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
         },
         '/blog': {
             top: {
-                bg: "bg-transparent border-transparent py-7 md:py-8",
+                bg: "bg-transparent border-transparent py-4 md:py-5",
                 text: "text-white",
                 linkText: "text-neutral-300 hover:text-white hover:bg-white/10",
                 logoInvert: false,
@@ -81,7 +81,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
                 activeIndicator: "bg-rose-400"
             },
             scrolled: {
-                bg: "bg-neutral-950/95 backdrop-blur-xl border-neutral-800 shadow-[0_40px_100px_rgba(0,0,0,0.45)] py-4 md:py-5",
+                bg: "bg-neutral-950/95 backdrop-blur-xl border-neutral-800 shadow-[0_40px_100px_rgba(0,0,0,0.45)] py-2 md:py-3",
                 text: "text-white",
                 linkText: "text-neutral-300 hover:text-white hover:bg-white/5",
                 logoInvert: false,
@@ -91,7 +91,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
         },
         '/partners': {
             top: {
-                bg: "bg-transparent border-transparent py-7 md:py-8",
+                bg: "bg-transparent border-transparent py-4 md:py-5",
                 text: "text-white",
                 linkText: "text-indigo-200 hover:text-white hover:bg-white/10",
                 logoInvert: false,
@@ -99,7 +99,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
                 activeIndicator: "bg-amber-400"
             },
             scrolled: {
-                bg: "bg-indigo-950/95 backdrop-blur-xl border-indigo-800 shadow-[0_40px_100px_rgba(0,0,0,0.45)] py-4 md:py-5",
+                bg: "bg-indigo-950/95 backdrop-blur-xl border-indigo-800 shadow-[0_40px_100px_rgba(0,0,0,0.45)] py-2 md:py-3",
                 text: "text-white",
                 linkText: "text-indigo-200 hover:text-white hover:bg-white/5",
                 logoInvert: false,
@@ -109,7 +109,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
         },
         '/help': {
             top: {
-                bg: "bg-transparent border-transparent py-7 md:py-8",
+                bg: "bg-transparent border-transparent py-4 md:py-5",
                 text: "text-white",
                 linkText: "text-white/80 hover:text-white hover:bg-white/10",
                 logoInvert: false,
@@ -117,7 +117,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
                 activeIndicator: "bg-white"
             },
             scrolled: {
-                bg: "bg-[#49B9FF]/95 backdrop-blur-xl border-sky-400 shadow-[0_40px_100px_rgba(0,0,0,0.25)] py-4 md:py-5",
+                bg: "bg-[#49B9FF]/95 backdrop-blur-xl border-sky-400 shadow-[0_40px_100px_rgba(0,0,0,0.25)] py-2 md:py-3",
                 text: "text-white",
                 linkText: "text-white/95 hover:text-white hover:bg-white/5",
                 logoInvert: false,
@@ -127,7 +127,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
         },
         '/safety': {
             top: {
-                bg: "bg-transparent border-transparent py-7 md:py-8",
+                bg: "bg-transparent border-transparent py-4 md:py-5",
                 text: "text-white",
                 linkText: "text-emerald-200 hover:text-white hover:bg-white/10",
                 logoInvert: false,
@@ -135,7 +135,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
                 activeIndicator: "bg-emerald-300"
             },
             scrolled: {
-                bg: "bg-emerald-950/95 backdrop-blur-xl border-emerald-800 shadow-[0_40px_100px_rgba(0,0,0,0.45)] py-4 md:py-5",
+                bg: "bg-emerald-950/95 backdrop-blur-xl border-emerald-800 shadow-[0_40px_100px_rgba(0,0,0,0.45)] py-2 md:py-3",
                 text: "text-white",
                 linkText: "text-emerald-200 hover:text-white hover:bg-white/5",
                 logoInvert: false,
@@ -145,7 +145,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
         },
         '/cancel-policy': {
             top: {
-                bg: "bg-transparent border-transparent py-7 md:py-8",
+                bg: "bg-transparent border-transparent py-4 md:py-5",
                 text: "text-gray-800",
                 linkText: "text-amber-800/80 hover:text-amber-950 hover:bg-amber-100/50",
                 logoInvert: true,
@@ -153,7 +153,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
                 activeIndicator: "bg-amber-900"
             },
             scrolled: {
-                bg: "bg-[#fdf8e6]/95 backdrop-blur-xl border-amber-200 shadow-[0_40px_100px_rgba(0,0,0,0.15)] py-4 md:py-5",
+                bg: "bg-[#fdf8e6]/95 backdrop-blur-xl border-amber-200 shadow-[0_40px_100px_rgba(0,0,0,0.15)] py-2 md:py-3",
                 text: "text-gray-900",
                 linkText: "text-amber-800 hover:text-amber-950 hover:bg-amber-100",
                 logoInvert: true,
@@ -163,7 +163,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
         },
         '/support': {
             top: {
-                bg: "bg-transparent border-transparent py-7 md:py-8",
+                bg: "bg-transparent border-transparent py-4 md:py-5",
                 text: "text-white",
                 linkText: "text-slate-300 hover:text-white hover:bg-white/10",
                 logoInvert: false,
@@ -171,7 +171,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
                 activeIndicator: "bg-cyan-400"
             },
             scrolled: {
-                bg: "bg-slate-900/95 backdrop-blur-xl border-slate-800 shadow-[0_40px_100px_rgba(0,0,0,0.35)] py-4 md:py-5",
+                bg: "bg-slate-900/95 backdrop-blur-xl border-slate-800 shadow-[0_40px_100px_rgba(0,0,0,0.35)] py-2 md:py-3",
                 text: "text-white",
                 linkText: "text-slate-300 hover:text-white hover:bg-white/5",
                 logoInvert: false,
@@ -181,7 +181,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
         },
         '/access': {
             top: {
-                bg: "bg-transparent border-transparent py-5 md:py-6",
+                bg: "bg-transparent border-transparent py-3 md:py-4",
                 text: "text-white",
                 linkText: "text-indigo-100 hover:text-white hover:bg-white/10",
                 logoInvert: false,
@@ -189,7 +189,7 @@ const getNavbarTheme = (pathname, isScrolled) => {
                 activeIndicator: "bg-indigo-200"
             },
             scrolled: {
-                bg: "bg-indigo-600/95 backdrop-blur-xl border-indigo-500 shadow-[0_40px_100px_rgba(0,0,0,0.25)] py-4 md:py-5",
+                bg: "bg-indigo-600/95 backdrop-blur-xl border-indigo-500 shadow-[0_40px_100px_rgba(0,0,0,0.25)] py-2 md:py-3",
                 text: "text-white",
                 linkText: "text-indigo-100 hover:text-white hover:bg-white/5",
                 logoInvert: false,
@@ -234,14 +234,14 @@ const Navbar = () => {
     const theme = getNavbarTheme(location.pathname, isScrolled);
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-16 lg:px-24 xl:px-32 pt-5 md:pt-6">
-            <div className={`flex items-center justify-between w-full transition-all duration-500 rounded-[3.5rem] px-5 md:px-8 lg:px-10 ${theme.bg}`}>
+        <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-16 lg:px-24 xl:px-32 pt-4 md:pt-5">
+            <div className={`flex items-center justify-between w-full transition-all duration-500 rounded-full px-5 md:px-8 lg:px-10 ${theme.bg}`}>
 
                 <Link to='/' className="group flex items-center shrink-0">
                     <img
                         src={assets.logo}
                         alt="Bekele Mola Hotels"
-                        className="h-12 md:h-16 w-auto min-w-[160px] md:min-w-[220px] max-w-[260px] md:max-w-[320px] object-contain object-left transition-transform duration-500 group-hover:scale-105 drop-shadow-sm"
+                        className="h-10 md:h-12 w-auto min-w-[140px] md:min-w-[180px] max-w-[220px] object-contain object-left transition-transform duration-500 group-hover:scale-105 drop-shadow-sm"
                     />
                 </Link>
 
@@ -254,7 +254,7 @@ const Navbar = () => {
                                 <div key={i} className="relative group/navdropdown h-full flex items-center">
                                     <Link
                                         to={link.path}
-                                        className={`relative px-5 py-2.5 text-base font-medium rounded-xl transition-all duration-300 flex items-center gap-1
+                                        className={`relative px-4 py-2 text-sm lg:text-base font-medium rounded-xl transition-all duration-300 flex items-center gap-1
                                             ${theme.linkText}
                                             ${isActive ? theme.activeLink : ""}`}
                                     >
@@ -262,7 +262,7 @@ const Navbar = () => {
                                         <svg className={`w-4 h-4 transition-transform duration-300 group-hover/navdropdown:rotate-180 ${isActive ? theme.activeLink : theme.linkText}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                         </svg>
-                                        <span className={`absolute bottom-1.5 left-5 right-5 h-[2px] rounded-full scale-x-0 group-hover/navdropdown:scale-x-100 transition-transform duration-300 origin-left
+                                        <span className={`absolute bottom-1.5 left-4 right-4 h-[2px] rounded-full scale-x-0 group-hover/navdropdown:scale-x-100 transition-transform duration-300 origin-left
                                             ${isActive ? "scale-x-100" : ""}
                                             ${theme.activeIndicator}`}
                                         />
@@ -291,12 +291,12 @@ const Navbar = () => {
                             <Link
                                 key={i}
                                 to={link.path}
-                                className={`relative px-5 py-2.5 text-base font-medium rounded-xl transition-all duration-300 group
+                                className={`relative px-4 py-2 text-sm lg:text-base font-medium rounded-xl transition-all duration-300 group
                                     ${theme.linkText}
                                     ${isActive ? theme.activeLink : ""}`}
                             >
                                 {link.name}
-                                <span className={`absolute bottom-1.5 left-5 right-5 h-[2px] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left
+                                <span className={`absolute bottom-1.5 left-4 right-4 h-[2px] rounded-full scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left
                                     ${isActive ? "scale-x-100" : ""}
                                     ${theme.activeIndicator}`}
                                 />
@@ -306,8 +306,8 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden md:flex items-center gap-3">
-                    <span className={`p-2.5 rounded-xl ${theme.logoInvert ? "invert" : ""}`}>
-                        <img src={assets.searchIcon} alt="search" className="h-6 w-6" />
+                    <span className={`p-2 rounded-xl ${theme.logoInvert ? "invert" : ""}`}>
+                        <img src={assets.searchIcon} alt="search" className="h-5 w-5" />
                     </span>
 
                     {user ? (
@@ -317,7 +317,7 @@ const Navbar = () => {
                                 className={`flex items-center gap-2 rounded-full ring-2 ring-offset-2 transition-all duration-300 hover:ring-[#49B9FF]
                                     ${theme.logoInvert ? "ring-gray-200 ring-offset-white" : "ring-white/30 ring-offset-transparent"}`}
                             >
-                                <img src={user.image} alt="" className="w-10 h-10 rounded-full object-cover" />
+                                <img src={user.image} alt="" className="w-9 h-9 rounded-full object-cover" />
                             </button>
                             {profileOpen && (
                                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
@@ -339,8 +339,8 @@ const Navbar = () => {
                         </div>
                     ) : (
                         <div className="flex items-center gap-2">
-                            <Link to="/login" className={`px-6 py-2.5 text-base font-semibold rounded-xl transition-all ${theme.logoInvert ? "text-gray-700 hover:text-blue-600" : "text-white hover:bg-white/10"}`}>Login</Link>
-                            <Link to="/signup" className={`px-8 py-2 rounded-xl text-base font-semibold whitespace-nowrap transition-all hover:scale-105 ${theme.logoInvert ? "bg-gradient-to-r from-[#49B9FF] to-blue-600 text-white shadow-lg" : "bg-white text-gray-900 shadow-lg"}`}>Sign Up</Link>
+                            <Link to="/login" className={`px-5 py-2 text-sm font-bold rounded-full border-2 transition-all ${theme.logoInvert ? "border-gray-200 text-gray-700 hover:border-blue-500 hover:text-blue-600 bg-white hover:bg-blue-50" : "border-white/30 text-white hover:bg-white/10"}`}>Login</Link>
+                            <Link to="/signup" className={`px-6 py-2 text-sm font-bold whitespace-nowrap transition-all hover:scale-105 border-2 border-transparent rounded-full ${theme.logoInvert ? "bg-gradient-to-r from-[#49B9FF] to-blue-600 text-white shadow-md hover:shadow-lg" : "bg-white text-gray-900 shadow-md hover:shadow-lg"}`}>Sign Up</Link>
                         </div>
                     )}
                 </div>
