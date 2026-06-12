@@ -109,8 +109,8 @@ const seedDatabase = async () => {
         pricePerNight: 1800,
         amenities: ["Free Wifi", "Air Conditioning", "Housekeeping"],
         images: [
-          "https://images.unsplash.com/photo-1536906040854-18451f22e865?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1522771731478-44637047cac4?w=800&h=600&fit=crop",
+          "/src/assets/bedrooms/Buren Sheesham Wood Single Bed In Honey Oak Finish.jfif",
+          "/src/assets/bedrooms/አልጋ.jfif",
         ],
       },
       {
@@ -120,8 +120,8 @@ const seedDatabase = async () => {
         pricePerNight: 5500,
         amenities: ["Free Wifi", "Free Breakfast", "Room Service", "Parking", "Air Conditioning"],
         images: [
-          "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop",
+          "/src/assets/bedrooms/Luxurious home away from home shanzu.jfif",
+          "/src/assets/bedrooms/Sheesham wooden bed hav unique look & treadtional….jfif",
         ],
       },
       {
@@ -131,8 +131,8 @@ const seedDatabase = async () => {
         pricePerNight: 8500,
         amenities: ["Free Wifi", "Free Breakfast", "Room Service", "Mountain View", "Parking", "Air Conditioning"],
         images: [
-          "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?w=800&h=600&fit=crop",
+          "/src/assets/bedrooms/Eigentumswohnung · Malabo · ★4,95 · 2 Schlafzimmer · 2 Betten · 1 privates Badezimmer.jfif",
+          "/src/assets/bedrooms/Buren Sheesham Wood Single Bed In Honey Oak Finish.jfif",
         ],
       },
       {
@@ -142,8 +142,8 @@ const seedDatabase = async () => {
         pricePerNight: 1200,
         amenities: ["Free Wifi", "Housekeeping", "Air Conditioning"],
         images: [
-          "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=800&h=600&fit=crop",
+          "/src/assets/bedrooms/አልጋ.jfif",
+          "/src/assets/bedrooms/Sheesham wooden bed hav unique look & treadtional….jfif",
         ],
       },
     ];

@@ -44,6 +44,15 @@ import bedroom3 from "./bedrooms/Luxurious home away from home shanzu.jfif";
 import bedroom4 from "./bedrooms/Sheesham wooden bed hav unique look & treadtional….jfif";
 import bedroom5 from "./bedrooms/አልጋ.jfif";
 
+import addisGallery2 from "./adiss ababa/10002.jfif";
+import addisGallery3 from "./adiss ababa/10003.jfif";
+
+import adamaGallery1 from "./adama/10015.jpg";
+import adamaGallery2 from "./adama/10006.jpg";
+
+import arbaminchGallery1 from "./arbaminch/10002.jpg";
+import arbaminchGallery2 from "./arbaminch/10011.jpg";
+
 export const bedroomImages = [bedroom1, bedroom2, bedroom3, bedroom4, bedroom5];
 
 export const getRoomDisplayImage = (index, fallback) => {
@@ -104,8 +113,8 @@ export const branches = [
     heroImage: adamaHero,
     images: [
       adamaHero,
-      "/src/assets/adama/10015.jpg",
-      "/src/assets/adama/10006.jpg",
+      adamaGallery1,
+      adamaGallery2,
     ],
     description:
       "A modern luxury hotel in the heart of Adama, featuring exquisite dining, a relaxing pool, and spacious rooms tailored for both business and leisure travelers.",
@@ -117,8 +126,8 @@ export const branches = [
     heroImage: arbaminchHero,
     images: [
       arbaminchHero,
-      "/src/assets/arbaminch/10002.jpg",
-      "/src/assets/arbaminch/10011.jpg",
+      arbaminchGallery1,
+      arbaminchGallery2,
     ],
     description:
       "Overlooking the majestic lakes Abaya and Chamo, our Arbaminch branch offers a serene gateway to explore the natural wonders of the South while enjoying top-tier comfort.",
@@ -130,8 +139,8 @@ export const branches = [
     heroImage: addisAbebaHero,
     images: [
       addisAbebaHero,
-      "/src/assets/adiss ababa/10002.jfif",
-      "/src/assets/adiss ababa/10003.jfif",
+      addisGallery2,
+      addisGallery3,
     ],
     description:
       "Located in the vibrant center of Addis Abeba, this flagship branch combines world-class amenities, panoramic city views, and unparalleled hospitality.",
