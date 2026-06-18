@@ -61,25 +61,14 @@ const BranchSelector = () => {
                 </p>
             </div>
 
-            {/* Mobile: narrower horizontal carousel */}
-            <div className="flex md:hidden overflow-x-auto gap-4 pb-4 -mx-6 px-6 snap-x snap-mandatory w-full max-w-[1200px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {/* Mobile: stacked vertically · Desktop: grid */}
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 w-full max-w-[1200px]'>
                 {branches.map((branch) => (
                     <BranchCard
                         key={branch.slug}
                         branch={branch}
                         onSelect={goToBranch}
-                        className="flex-shrink-0 w-[72vw] max-w-[260px] snap-center"
-                    />
-                ))}
-            </div>
-
-            {/* Desktop: grid */}
-            <div className='hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-[1200px]'>
-                {branches.map((branch) => (
-                    <BranchCard
-                        key={branch.slug}
-                        branch={branch}
-                        onSelect={goToBranch}
+                        className="w-full"
                     />
                 ))}
             </div>
