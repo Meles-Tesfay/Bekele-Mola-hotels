@@ -3,15 +3,17 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useAppContext } from '../context/AppContext';
 import HotelCard from '../components/HotelCard';
 import HospitalityCard from '../components/HospitalityCard';
-import { branches, facilityIcons } from '../assets/assets';
+import { branches } from '../assets/assets';
 import { resolveImageUrl } from '../utils/resolveImage';
+import { filterByBranchCity } from '../utils/branchLookup';
 
 const BranchPage = () => {
     const { slug } = useParams();
     const navigate = useNavigate();
-    const { axios } = useAppContext();
+    const { axios, rooms: allRooms, hospitalities: allHospitalities } = useAppContext();
     
     const localBranchInfo = branches.find(b => b.slug === slug);
+    const branchCity = localBranchInfo?.city || localBranchInfo?.name;
 
     const [branchData, setBranchData] = useState(null);
     const [rooms, setRooms] = useState([]);
@@ -49,14 +51,37 @@ const BranchPage = () => {
         const fetchBranchData = async () => {
             try {
                 setLoading(true);
-                const { data } = await axios.get(`/api/branches/${localBranchInfo.name}`);
+                const { data } = await axios.get(`/api/branches/${slug}`);
                 if (data.success) {
                     setBranchData(data.branch);
                     setRooms(data.rooms || []);
                     setHospitalities(data.hospitalities || []);
+                } else {
+                    const fallbackRooms = filterByBranchCity(allRooms, branchCity);
+                    const fallbackHospitalities = filterByBranchCity(allHospitalities, branchCity);
+
+                    if (fallbackRooms.length > 0) {
+                        setBranchData(fallbackRooms[0].hotel);
+                        setRooms(fallbackRooms);
+                    }
+                    if (fallbackHospitalities.length > 0) {
+                        setBranchData((prev) => prev || fallbackHospitalities[0].hotel);
+                        setHospitalities(fallbackHospitalities);
+                    }
                 }
             } catch (error) {
                 console.error("Failed to fetch branch data", error);
+                const fallbackRooms = filterByBranchCity(allRooms, branchCity);
+                const fallbackHospitalities = filterByBranchCity(allHospitalities, branchCity);
+
+                if (fallbackRooms.length > 0) {
+                    setBranchData(fallbackRooms[0].hotel);
+                    setRooms(fallbackRooms);
+                }
+                if (fallbackHospitalities.length > 0) {
+                    setBranchData((prev) => prev || fallbackHospitalities[0].hotel);
+                    setHospitalities(fallbackHospitalities);
+                }
             } finally {
                 setLoading(false);
             }
@@ -64,7 +89,25 @@ const BranchPage = () => {
 
         fetchBranchData();
         window.scrollTo(0, 0);
-    }, [slug, localBranchInfo, axios, navigate]);
+    }, [slug, localBranchInfo, axios, navigate, branchCity]);
+
+    useEffect(() => {
+        if (loading || branchData || !branchCity) return;
+
+        const fallbackRooms = filterByBranchCity(allRooms, branchCity);
+        const fallbackHospitalities = filterByBranchCity(allHospitalities, branchCity);
+
+        if (fallbackRooms.length === 0 && fallbackHospitalities.length === 0) return;
+
+        if (fallbackRooms.length > 0) {
+            setBranchData(fallbackRooms[0].hotel);
+            setRooms(fallbackRooms);
+        }
+        if (fallbackHospitalities.length > 0) {
+            setBranchData((prev) => prev || fallbackHospitalities[0].hotel);
+            setHospitalities(fallbackHospitalities);
+        }
+    }, [allRooms, allHospitalities, branchCity, branchData, loading]);
 
     if (!localBranchInfo || loading) {
         return (

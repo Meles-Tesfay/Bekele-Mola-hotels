@@ -148,14 +148,13 @@ const seedDatabase = async () => {
       },
     ];
 
-    const roomsToInsert = roomTemplates.map((template, index) => {
-      const hotel = createdHotels[index % createdHotels.length];
-      return {
+    const roomsToInsert = createdHotels.flatMap((hotel) =>
+      roomTemplates.map((template) => ({
         ...template,
         hotel: hotel._id.toString(),
         isAvailable: true,
-      };
-    });
+      }))
+    );
     await Room.insertMany(roomsToInsert);
     console.log(`✅ ${roomsToInsert.length} rooms created`);
 
@@ -219,14 +218,13 @@ const seedDatabase = async () => {
       },
     ];
 
-    const hospitalityToInsert = hospitalityTemplates.map((template, index) => {
-      const hotel = createdHotels[index % createdHotels.length];
-      return {
+    const hospitalityToInsert = createdHotels.flatMap((hotel) =>
+      hospitalityTemplates.map((template) => ({
         ...template,
         hotel: hotel._id.toString(),
         isAvailable: true,
-      };
-    });
+      }))
+    );
     await Hospitality.insertMany(hospitalityToInsert);
     console.log(`✅ ${hospitalityToInsert.length} hospitality items created`);
 

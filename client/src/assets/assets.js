@@ -109,6 +109,7 @@ export const branches = [
   {
     slug: "adama",
     name: "Adama",
+    city: "Adama",
     tagline: "Your comfortable stop in Adama",
     heroImage: adamaHero,
     images: [
@@ -122,6 +123,7 @@ export const branches = [
   {
     slug: "arbaminch",
     name: "Arbaminch",
+    city: "Arbaminch",
     tagline: "Stay right next to the lakes",
     heroImage: arbaminchHero,
     images: [
@@ -135,6 +137,7 @@ export const branches = [
   {
     slug: "addis-abeba",
     name: "Addis Abeba",
+    city: "Addis Abeba",
     tagline: "Right in the middle of the city",
     heroImage: addisAbebaHero,
     images: [
@@ -148,6 +151,7 @@ export const branches = [
   {
     slug: "meki",
     name: "Meki",
+    city: "Meki",
     tagline: "Quiet weekends by Lake Ziway",
     heroImage: mekiHero,
     images: [

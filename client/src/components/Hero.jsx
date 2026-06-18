@@ -53,10 +53,10 @@ const Hero = () => {
           The Ultimate Hotel Experience
         </div>
 
-        {/* Premium Widget Search Bar */}
+        {/* Premium Widget Search Bar — desktop/tablet only */}
         <form
           onSubmit={onSearch}
-          className="bg-white/95 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.25)] rounded-[2rem] p-2.5 mt-8 flex flex-col md:flex-row items-stretch gap-2.5 w-full max-w-[960px] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_30px_60px_rgba(0,0,0,0.35)] relative z-20 border border-transparent"
+          className="hidden md:flex bg-white/95 backdrop-blur-2xl shadow-[0_20px_50px_rgba(0,0,0,0.25)] rounded-[2rem] p-2.5 mt-8 flex-row items-stretch gap-2.5 w-full max-w-[960px] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_30px_60px_rgba(0,0,0,0.35)] relative z-20 border border-transparent"
         >
           {/* Destination */}
           <div className="flex-1 w-full bg-gray-50/80 hover:bg-[#e8f4ff] border border-transparent hover:border-blue-300 rounded-[1.5rem] px-4 py-3 transition-all duration-300 group cursor-text focus-within:bg-white focus-within:border-blue-400 focus-within:ring-4 focus-within:ring-blue-100 hover:-translate-y-1 hover:shadow-[0_8px_20px_rgba(73,185,255,0.2)]">
@@ -80,7 +80,7 @@ const Hero = () => {
                 list="destinations"
                 id="destinationInput"
                 type="text"
-                className="w-full text-sm md:text-base font-bold text-gray-900 placeholder-gray-400 outline-none bg-transparent truncate"
+                className="w-full text-base font-bold text-gray-900 placeholder-gray-400 outline-none bg-transparent truncate"
                 placeholder="Where are you going?"
                 required
               />
@@ -110,7 +110,7 @@ const Hero = () => {
             <input
               id="checkIn"
               type="date"
-              className="w-full text-sm md:text-base font-bold text-gray-900 outline-none bg-transparent [color-scheme:light] cursor-text"
+              className="w-full text-base font-bold text-gray-900 outline-none bg-transparent [color-scheme:light] cursor-text"
             />
           </div>
 
@@ -132,13 +132,13 @@ const Hero = () => {
             <input
               id="checkOut"
               type="date"
-              className="w-full text-sm md:text-base font-bold text-gray-900 outline-none bg-transparent [color-scheme:light] cursor-text"
+              className="w-full text-base font-bold text-gray-900 outline-none bg-transparent [color-scheme:light] cursor-text"
             />
           </div>
 
           {/* Guests & Button Container */}
-          <div className="flex items-stretch w-full md:w-auto gap-2.5">
-            <div className="flex-1 md:w-32 bg-gray-50/80 hover:bg-[#e8f4ff] border border-transparent hover:border-blue-300 rounded-[1.5rem] px-4 py-3 transition-all duration-300 group cursor-text focus-within:bg-white focus-within:border-blue-400 focus-within:ring-4 focus-within:ring-blue-100 hover:-translate-y-1 hover:shadow-[0_8px_20px_rgba(73,185,255,0.2)]">
+          <div className="flex items-stretch w-auto gap-2.5">
+            <div className="w-32 bg-gray-50/80 hover:bg-[#e8f4ff] border border-transparent hover:border-blue-300 rounded-[1.5rem] px-4 py-3 transition-all duration-300 group cursor-text focus-within:bg-white focus-within:border-blue-400 focus-within:ring-4 focus-within:ring-blue-100 hover:-translate-y-1 hover:shadow-[0_8px_20px_rgba(73,185,255,0.2)]">
               <div className="flex items-center gap-2 mb-1">
                 <img
                   src={assets.guestsIcon}
@@ -157,21 +157,22 @@ const Hero = () => {
                 max={4}
                 id="guests"
                 type="number"
-                className="w-full text-sm md:text-base font-bold text-gray-900 placeholder-gray-400 outline-none bg-transparent"
+                className="w-full text-base font-bold text-gray-900 placeholder-gray-400 outline-none bg-transparent"
                 placeholder="0"
               />
             </div>
 
-            <button className="bg-gradient-to-br from-[#49B9FF] to-blue-600 w-full md:w-16 rounded-[1.5rem] shadow-lg shadow-blue-500/40 hover:shadow-[0_0_25px_rgba(73,185,255,0.7)] hover:-translate-y-2 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center flex-shrink-0 h-full py-3 md:py-0 group/btn">
+            <button
+              type="submit"
+              aria-label="Search"
+              className="bg-gradient-to-br from-[#49B9FF] to-blue-600 w-16 rounded-[1.5rem] shadow-lg shadow-blue-500/40 hover:shadow-[0_0_25px_rgba(73,185,255,0.7)] hover:-translate-y-2 hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center flex-shrink-0 h-full group/btn"
+            >
               <img
                 src={assets.searchIcon}
-                alt="Search"
+                alt=""
                 className="w-5 h-5 group-hover/btn:rotate-12 group-hover/btn:scale-125 transition-all duration-500"
                 style={{ filter: "brightness(0) invert(1)" }}
               />
-              <span className="md:hidden ml-2 font-bold text-white tracking-wide">
-                Search
-              </span>
             </button>
           </div>
         </form>
